@@ -16,9 +16,12 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  Publish_to_Cloudflare_Pages:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -51,5 +54,13 @@ jobs:
           apiToken: ${{ secrets.CF_API_KEY}}
           accountId: ${{ secrets.CF_ACCOUNT_ID}}
           projectName: cloudflare-pages-vpn
-          branch: main
           directory: .
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.ACTIONS_TOKEN }}
+          # Optional: Switch what branch you are publishing to.
+          # By default this will be the branch which triggered this workflow
+          branch: main
+          # Optional: Change the working directory
+          workingDirectory: .
+          # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
+          wranglerVersion: '3'
