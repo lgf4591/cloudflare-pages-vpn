@@ -1,66 +1,66 @@
-# # This is a basic workflow to help you get started with Actions
+# This is a basic workflow to help you get started with Actions
 
-# name: Auto Merge All ChromeGo Proxies
+name: Auto Merge All ChromeGo Proxies
 
-# # Controls when the workflow will run
-# on:
-#   # Triggers the workflow on push or pull request events but only for the "main" branch
-#   push:
-#     branches: [ "main" ]
-#   pull_request:
-#     branches: [ "main" ]
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
-#   # Allows you to run this workflow manually from the Actions tab
-#   workflow_dispatch:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
-# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-# jobs:
-#   # This workflow contains a single job called "build"
-#   Publish_to_Cloudflare_Pages:
-#     # The type of runner that the job will run on
-#     runs-on: ubuntu-latest
-#     permissions:
-#       contents: read
-#       deployments: write
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  Publish_to_Cloudflare_Pages:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
 
-#     # Steps represent a sequence of tasks that will be executed as part of the job
-#     steps:
-#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v3
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
 
-#       # Runs a single command using the runners shell
-#       - name: Auto Merge All ChromeGo Proxies by shell script
-#         run: |
-#           sh main.sh
-#           cd ChromeGo
-#           ls
+      # Runs a single command using the runners shell
+      - name: Auto Merge All ChromeGo Proxies by shell script
+        run: |
+          sh main.sh
+          cd ChromeGo
+          ls
             
-#       # - name: commit files
-#       #   run: |
-#       #     git config --local user.email "action@github.com"
-#       #     git config --local user.name "GitHub Action"
-#       #     git add -A
-#       #     git commit -m "github action auto build" -a
+      # - name: commit files
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add -A
+      #     git commit -m "github action auto build" -a
           
-#       # - name: push changes
-#       #   uses: ad-m/github-push-action@v0.6.0
-#       #   with:
-#       #     github_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     branch: main  
+      # - name: push changes
+      #   uses: ad-m/github-push-action@v0.6.0
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: main  
 
-#       - name: Publish to Cloudflare Pages
-#         uses: cloudflare/pages-action@v1
-#         with:
-#           apiToken: ${{ secrets.CF_API_KEY}}
-#           accountId: ${{ secrets.CF_ACCOUNT_ID}}
-#           projectName: cloudflare-pages-vpn
-#           directory: .
-#           # Optional: Enable this if you want to have GitHub Deployments triggered
-#           gitHubToken: ${{ secrets.ACTIONS_TOKEN }}
-#           # Optional: Switch what branch you are publishing to.
-#           # By default this will be the branch which triggered this workflow
-#           branch: main
-#           # Optional: Change the working directory
-#           workingDirectory: .
-#           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
-#           wranglerVersion: '3'
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CF_API_KEY}}
+          accountId: ${{ secrets.CF_ACCOUNT_ID}}
+          projectName: cloudflare-pages-vpn
+          directory: .
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.ACTIONS_TOKEN }}
+          # Optional: Switch what branch you are publishing to.
+          # By default this will be the branch which triggered this workflow
+          branch: main
+          # Optional: Change the working directory
+          workingDirectory: .
+          # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
+          wranglerVersion: '3'
