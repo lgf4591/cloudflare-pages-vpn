@@ -26,13 +26,30 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Auto Merge All ChromeGo Proxies
-        run: sh main.sh
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Auto Merge All ChromeGo Proxies by shell script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          sh main.sh
           cd ChromeGo
           ls
+            
+      # - name: commit files
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add -A
+      #     git commit -m "github action auto build" -a
+          
+      # - name: push changes
+      #   uses: ad-m/github-push-action@v0.6.0
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: main  
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CF_API_KEY}}
+          accountId: ${{ secrets.CF_ACCOUNT_ID}}
+          projectName: cloudflare-pages-vpn
+          branch: main
+          directory: .
