@@ -2,6 +2,11 @@
 
 
 ```
+need install packages:
+
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y qrencode
+
 cp -r /mnt/c/Users/lgf/.ssh ~
 cd ~/.ssh
 chmod 600 *id_rsa
