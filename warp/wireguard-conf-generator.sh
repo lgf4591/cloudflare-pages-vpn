@@ -13,6 +13,13 @@ yellow(){
 }
 
 wgcf_exec="./wgcf-linux"
+wgcf_exec_version="2.2.19"
+
+# wget -c https://github.com/ViRb3/wgcf/releases/download/v2.2.19/wgcf_2.2.19_windows_amd64.exe -O wgcf.exe
+# https://github.com/ViRb3/wgcf/releases/download/v2.2.19/wgcf_2.2.19_linux_amd64
+# https://github.com/ViRb3/wgcf/releases/download/v2.2.19/wgcf_2.2.19_freebsd_amd64
+# https://github.com/ViRb3/wgcf/releases/download/v2.2.19/wgcf_2.2.19_darwin_amd64
+
 
 rm -f wgcf-account.toml wgcf-profile.conf
 echo | ${wgcf_exec} register --accept-tos yes
