@@ -5,3 +5,8 @@ wget -c https://github.com/ViRb3/wgcf/releases/download/v2.2.19/wgcf_2.2.19_wind
 wget -c https://github.com/ViRb3/wgcf/releases/download/v2.2.19/wgcf_2.2.19_linux_amd64 -O ./warp/linux/wgcf
 wget -c https://github.com/ViRb3/wgcf/releases/download/v2.2.19/wgcf_2.2.19_darwin_amd64 -O ./warp/macos/wgcf
 wget -c https://github.com/ViRb3/wgcf/releases/download/v2.2.19/wgcf_2.2.19_freebsd_amd64 -O ./warp/unix/wgcf-freebsd
+
+python main.py
+
+python markdown_to_html.py
+
