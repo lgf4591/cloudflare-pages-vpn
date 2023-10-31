@@ -3,19 +3,28 @@
 
 
 import os
-try:
-    from markdown import markdown
-except ModuleNotFoundError as e:
-    os.system("pip install markdown")
-    os.system("pip install python-markdown-math")
-    os.system("pip install markdown_checklist")
-    from markdown import markdown
+os.system("pip install markdown")
+os.system("pip install python-markdown-math")
+os.system("pip install markdown_checklist")
+os.system("pip install pymdown-extensions")
 
-try:
-    from pymdownx import superfences
-except ModuleNotFoundError as e:
-    os.system("pip install pymdown-extensions")
-    from pymdownx import superfences
+
+# try:
+#     from markdown import markdown # BUG: on github actions:ModuleNotFoundError: No module named 'markdown'
+# except ModuleNotFoundError as e:
+#     os.system("pip install markdown")
+#     os.system("pip install python-markdown-math")
+#     os.system("pip install markdown_checklist")
+#     from markdown import markdown
+
+# try:
+#     from pymdownx import superfences
+# except ModuleNotFoundError as e:
+#     os.system("pip install pymdown-extensions")
+#     from pymdownx import superfences
+
+from markdown import markdown
+from pymdownx import superfences
 
 class mdtox:
     def __init__(self, md_filename, encoding='utf-8'):
