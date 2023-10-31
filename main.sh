@@ -11,10 +11,14 @@ python main.py
 python markdown_to_html.py
 
 cd ChromeGo_Merge
+
 print("Install dependencies")
 pip install -r requirements.txt
+
 print("Run merge script")
-python meta_merge.py 
+python meta_merge.py
+
 print("Run shadowrocket merge script")
 python merge.py 
+
 print("finished!!!")
