@@ -158,7 +158,7 @@ git pull origin main
 ```
 
 https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies.yaml
-https://cloudflare-pages-vpn.pages.dev/chromego_merge/sub/merged_proxies_new.yaml (推荐用这个)
+https://cloudflare-pages-vpn.pages.dev/ChromeGo_Merge/sub/merged_proxies_new.yaml (推荐用这个)
 
 ```
 
@@ -167,7 +167,7 @@ https://cloudflare-pages-vpn.pages.dev/chromego_merge/sub/merged_proxies_new.yam
 ```
 
 https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies_with_warp.yaml
-https://cloudflare-pages-vpn.pages.dev/chromego_merge/sub/merged_warp_proxies_new.yaml (推荐用这个)
+https://cloudflare-pages-vpn.pages.dev/ChromeGo_Merge/sub/merged_warp_proxies_new.yaml (推荐用这个)
 
 ```
 
@@ -177,7 +177,7 @@ https://cloudflare-pages-vpn.pages.dev/chromego_merge/sub/merged_warp_proxies_ne
 ```
 
 https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies_shadowrocket_nekoray.txt
-https://cloudflare-pages-vpn.pages.dev/chromego_merge/sub/shadowrocket_base64.txt (推荐用这个)
+https://cloudflare-pages-vpn.pages.dev/ChromeGo_Merge/sub/shadowrocket_base64.txt (推荐用这个)
 
 ```
 
