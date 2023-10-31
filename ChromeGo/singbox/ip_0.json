@@ -1,0 +1,32 @@
+{
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 1080,
+      "sniff": true,
+      "set_system_proxy": false
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "hysteria",
+      "tag": "Hysteria-3166",
+      "server": "www.dtku50.xyz", 
+      "server_port": 28877,
+      "up_mbps": 50, 
+      "down_mbps": 100, 
+      "auth_str": "y6Sf5xTFyNx5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.dtku50.xyz", 
+        "alpn": [
+          "h3"
+        ]
+
+      }
+    }
+  ] 
+	 
+}

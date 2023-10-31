@@ -1,0 +1,4 @@
+{
+  "listen": "socks://127.0.0.1:1080",
+  "proxy": "https://dongtaiwang.com:dongtaiwang.com@www.dtku48.xyz:443"
+}

@@ -1,0 +1,24 @@
+
+{
+  "server": "www.dtku46.xyz:13579",
+  "auth": "dongtaiwang.com",
+  "tls": {
+    "sni": "www.bing.com",
+    "insecure": true
+  },
+  "quic": {
+    "initStreamReceiveWindow": 16777216,
+    "maxStreamReceiveWindow": 16777216,
+    "initConnReceiveWindow": 33554432,
+    "maxConnReceiveWindow": 33554432
+  },
+    "fastOpen": true,
+  "socks5": {
+    "listen": "127.0.0.1:1080"
+  },
+  "transport": {
+    "udp": {
+      "hopInterval": "30s"
+    }
+  }
+}
