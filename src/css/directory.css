@@ -1,0 +1,59 @@
+/*生成博客目录的CSS*/
+#uprightsideBar{
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:left;
+    position:fixed;/*将div的位置固定到距离top:50px，right:0px的位置，这样div就会处在最右边的位置，距离顶部50px*/
+    top:50px;
+    right:0px;
+    width: auto;
+    height: auto; 
+}
+#sideBarTab{
+    float:left;
+    width:30px; 
+    border:1px solid #e5e5e5;
+    border-right:none;
+    text-align:center;
+    background:#ffffff;
+}
+
+#sideBarContents{
+    float:left;
+    overflow:auto; 
+    overflow-x:hidden;!important;
+    width:200px;
+    min-height:108px;
+    max-height:460px;
+    border:1px solid #e5e5e5;
+    border-right:none; 
+    background:#ffffff;
+}
+#sideBarContents dl{
+    margin:0;
+    padding:0;
+}
+
+#sideBarContents dt{
+    margin-top:5px;
+    margin-left:5px;
+}
+
+#sideBarContents dd, dt {
+    cursor: pointer;
+}
+
+#sideBarContents dd:hover, dt:hover {
+    color:#A7995A;
+}
+#sideBarContents dd{
+    margin-left:20px;
+}
+
+/*溢出隐藏设置*/
+#topics, #mainContent {
+    overflow: visible;
+}
+#postDesc {
+    float: none;
+}

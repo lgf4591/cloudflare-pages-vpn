@@ -1,0 +1,3 @@
+[data-linenos]:before {
+    content: attr(data-linenos);
+}

@@ -30,16 +30,16 @@ class mdtox:
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
                 <title>{}</title>
-                <link rel="stylesheet" href="./src/css/linenum.css">
-                <link rel="stylesheet" href="./src/css/markdown.css">
-                <link rel="stylesheet" href="./src/css/tasklist.css">
-                <link rel="stylesheet" href="./src/css/codehighlight.css">
-                <link rel="stylesheet" href="./src/css/directory.css">
-                <link rel="stylesheet" href="./src/css/katex.min.css">
-                <script src="./src/js/directory.js"></script>
-                <script src="./src/js/mermaid.min.js"></script>
-                <script src="./src/js/katex.min.js"></script>
-                <script src="./src/js/mathtex-script-type.min.js" defer></script>
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/linenum.css">
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/markdown.css">
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/tasklist.css">
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/codehighlight.css">
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/directory.css">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossorigin="anonymous">
+                <script src="https://files.cnblogs.com/files/bpf-1024/directory.js"></script>
+                <script src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/mathtex-script-type.min.js" defer></script>
             </head>
             <body>
                 <article class="markdown-body" id="markdown-body">
