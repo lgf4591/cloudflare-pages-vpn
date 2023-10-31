@@ -111,7 +111,7 @@ for (index,config) in enumerate(clashMeta_configs):
 
 readme_doc = """
 
-# ================================= Last Update Time: {} =============================================
+================================= Last Update Time: {} =============================================
 
 # cloudflare-pages-vpn
 
