@@ -28,11 +28,13 @@ jobs:
 
       - name: Run shadowrocket merge script
         run: cd ChromeGo_Merge && python merge.py  # 替换为你的 merge.py 脚本名称
-      - name: Commit Changes
-        run: |
-          git config core.ignorecase false
-          git config --local user.email "lgf4591@outlook.com"
-          git config --local user.name "lgf4591"
-          git add .
-          git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+        
+      # BUG: lgf4591/cloudflare-pages-vpn.git denied to github-actions[bot]
+      # - name: Commit Changes
+      #   run: |
+      #     git config core.ignorecase false
+      #     git config --local user.email "lgf4591@outlook.com"
+      #     git config --local user.name "lgf4591"
+      #     git add .
+      #     git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
+      #     git push

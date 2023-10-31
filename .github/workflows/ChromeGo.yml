@@ -26,7 +26,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      # - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11  # 替换为你的 Python 版本
 
       # Runs a single command using the runners shell
       - name: Auto Merge All ChromeGo Proxies by shell script

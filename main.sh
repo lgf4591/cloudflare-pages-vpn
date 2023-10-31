@@ -12,13 +12,13 @@ python markdown_to_html.py
 
 cd ChromeGo_Merge
 
-print("Install dependencies")
+# print("Install dependencies")  # BUG: 在cloudfare部署时出现这个错误 -> main.sh: 15: Syntax error: word unexpected (expecting ")")
 pip install -r requirements.txt
 
-print("Run merge script")
+# print("Run merge script")
 python meta_merge.py
 
-print("Run shadowrocket merge script")
+# print("Run shadowrocket merge script")
 python merge.py 
 
-print("finished!!!")
+# print("finished!!!")
