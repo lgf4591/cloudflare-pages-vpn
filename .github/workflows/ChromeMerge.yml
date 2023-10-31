@@ -21,7 +21,7 @@ jobs:
           python-version: 3.11  # 替换为你的 Python 版本
 
       - name: Install dependencies
-        run: cd ./chromego_merge && pip install -r requirements.txt
+        run: cd ChromeGo_Merge && pip install -r requirements.txt
 
       - name: Run merge script
         run: python meta_merge.py  # 替换为你的 merge.py 脚本名称
