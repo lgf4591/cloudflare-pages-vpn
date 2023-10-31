@@ -1,6 +1,7 @@
 
 from subprocess import getoutput
 import os
+import time
 import urllib.request
 import json
 
@@ -35,6 +36,7 @@ better_cf_ips = curl('https://raw.githubusercontent.com/Alvin9999/new-pac/master
 freefq_doc = curl('https://raw.githubusercontent.com/freefq/free/master/README.md')
 vless_node = curl('https://vless-node.lgf4591.workers.dev/0d9163eb-b54f-4144-b7a2-96efda0f4ee7')
 
+update_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
 
 hysteria1_urls = [
     'https://www.gitlabip.xyz/Alvin9999/pac2/master/hysteria/1/config.json',
@@ -108,11 +110,15 @@ for (index,config) in enumerate(clashMeta_configs):
               
 
 readme_doc = """
+
+# ================================= Last Update Time: {} =============================================
+
 # cloudflare-pages-vpn
 
-#### https://replit.com/@lgf4591/WarpKey
-#### [wireguad-config-generator](https://github.com/lgf4591/wireguad-config-generator)
-#### [fanqiang](https://github.com/bannedbook/fanqiang)
+##### https://replit.com/@lgf4591/WarpKey
+##### [wireguad-config-generator](https://github.com/lgf4591/wireguad-config-generator)
+##### [fanqiang](https://github.com/bannedbook/fanqiang)
+##### [chromego_merge](https://github.com/vveg26/chromego_merge)
 
 ```
 need install packages:
@@ -150,20 +156,29 @@ git pull origin main
 #### 所有ChromeGo代理节点订阅地址（不可以访问一些敏感资源）
 
 ```
+
 https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies.yaml
+https://cloudflare-pages-vpn.pages.dev/chromego_merge/sub/merged_proxies_new.yaml (推荐用这个)
+
 ```
 
 #### 套warp的所有ChromeGo代理节点订阅地址（可以访问一些敏感资源）
 
 ```
+
 https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies_with_warp.yaml
+https://cloudflare-pages-vpn.pages.dev/chromego_merge/sub/merged_warp_proxies_new.yaml (推荐用这个)
+
 ```
 
 
 ### [通用链接 shadowrocket-nekoray](https://github.com/vveg26/chromego_merge/tree/main#%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5-shadowrocket-nekoray)
 
 ```
+
 https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies_shadowrocket_nekoray.txt
+https://cloudflare-pages-vpn.pages.dev/chromego_merge/sub/shadowrocket_base64.txt (推荐用这个)
+
 ```
 
 # CloudFlare优质IP
@@ -295,7 +310,7 @@ https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies_shadowrocket_
 
 """
 
-markdown_doc = readme_doc.format(vless_node,better_cf_ips,freefq_doc,hysteria1_urls[0],hysteria1_configs[0],hysteria1_urls[1],hysteria1_configs[1],hysteria1_urls[2],hysteria1_configs[2],hysteria1_urls[3],hysteria1_configs[3],hysteria2_urls[0],hysteria2_configs[0],hysteria2_urls[1],hysteria2_configs[1],hysteria2_urls[2],hysteria2_configs[2],hysteria2_urls[3],hysteria2_configs[3],naiveproxy_urls[0],naiveproxy_configs[0],naiveproxy_urls[1],naiveproxy_configs[1],singbox_urls[0],singbox_configs[0],singbox_urls[1],singbox_configs[1],xray_urls[0],xray_configs[0],xray_urls[1],xray_configs[1],clashMeta_urls[0],clashMeta_configs[0],clashMeta_urls[1],clashMeta_configs[1],clashMeta_urls[2],clashMeta_configs[2],clashMeta_urls[3],clashMeta_configs[3],clashMeta_urls[4],clashMeta_configs[4],clashMeta_urls[5],clashMeta_configs[5])
+markdown_doc = readme_doc.format(update_time,vless_node,better_cf_ips,freefq_doc,hysteria1_urls[0],hysteria1_configs[0],hysteria1_urls[1],hysteria1_configs[1],hysteria1_urls[2],hysteria1_configs[2],hysteria1_urls[3],hysteria1_configs[3],hysteria2_urls[0],hysteria2_configs[0],hysteria2_urls[1],hysteria2_configs[1],hysteria2_urls[2],hysteria2_configs[2],hysteria2_urls[3],hysteria2_configs[3],naiveproxy_urls[0],naiveproxy_configs[0],naiveproxy_urls[1],naiveproxy_configs[1],singbox_urls[0],singbox_configs[0],singbox_urls[1],singbox_configs[1],xray_urls[0],xray_configs[0],xray_urls[1],xray_configs[1],clashMeta_urls[0],clashMeta_configs[0],clashMeta_urls[1],clashMeta_configs[1],clashMeta_urls[2],clashMeta_configs[2],clashMeta_urls[3],clashMeta_configs[3],clashMeta_urls[4],clashMeta_configs[4],clashMeta_urls[5],clashMeta_configs[5])
 
 try:
     with open("./README.md", "w",encoding="utf-8") as readme_file:
