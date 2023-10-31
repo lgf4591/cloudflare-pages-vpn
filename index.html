@@ -1,1 +1,52 @@
-delete index.html
+
+        <!DOCTYPE html>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+                <title>README</title>
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/linenum.css">
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/markdown.css">
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/tasklist.css">
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/codehighlight.css">
+                <link rel="stylesheet" href="https://files.cnblogs.com/files/bpf-1024/directory.css">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossorigin="anonymous">
+                <script src="https://files.cnblogs.com/files/bpf-1024/directory.js"></script>
+                <script src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/mathtex-script-type.min.js" defer></script>
+            </head>
+            <body>
+                <article class="markdown-body" id="markdown-body">
+                    <h1 id="cloudflare-pages-vpn">cloudflare-pages-vpn</h1>
+<p><a href="https://replit.com/@lgf4591/WarpKey">https://replit.com/@lgf4591/WarpKey</a></p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>need install packages:
+<span class="linenos" data-linenos=" 2 "></span>
+<span class="linenos" data-linenos=" 3 "></span>sudo apt update &amp;&amp; sudo apt upgrade -y
+<span class="linenos" data-linenos=" 4 "></span>sudo apt install -y qrencode
+<span class="linenos" data-linenos=" 5 "></span>
+<span class="linenos" data-linenos=" 6 "></span>cp -r /mnt/c/Users/lgf/.ssh ~
+<span class="linenos" data-linenos=" 7 "></span>cd ~/.ssh
+<span class="linenos" data-linenos=" 8 "></span>chmod 600 *id_rsa
+<span class="linenos" data-linenos=" 9 "></span>chmod 644 *id_rsa.pub
+<span class="linenos" data-linenos="10 "></span>ssh -T git@github.com
+<span class="linenos" data-linenos="11 "></span>
+<span class="linenos" data-linenos="12 "></span>git clone git@github.com:lgf4591/cloudflare-pages-vpn.git
+<span class="linenos" data-linenos="13 "></span>git config --global user.name &quot;lgf4591&quot;
+<span class="linenos" data-linenos="14 "></span>git config --global user.email &quot;lgf4591@outlook.com&quot;
+<span class="linenos" data-linenos="15 "></span>git pull origin main
+</code></pre></div>
+<h2 id="chormego-test">免费的ChormeGo节点汇总  (test)</h2>
+<h3 id="clashmeta-"><a href="https://github.com/vveg26/chromego_merge/tree/main#%E4%B8%8D%E5%A5%97warp%E7%89%88%E6%9C%ACclashmeta-%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%80%9A%E7%94%A8-%E8%8A%82%E7%82%B9%E6%9C%80%E5%85%A8">clashmeta-全平台通用</a></h3>
+<h4 id="chromego">所有ChromeGo代理节点订阅地址（不可以访问一些敏感资源）</h4>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies.yaml
+</code></pre></div>
+<h4 id="warpchromego">套warp的所有ChromeGo代理节点订阅地址（可以访问一些敏感资源）</h4>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies_with_warp.yaml
+</code></pre></div>
+<h3 id="shadowrocket-nekoray"><a href="https://github.com/vveg26/chromego_merge/tree/main#%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5-shadowrocket-nekoray">通用链接 shadowrocket-nekoray</a></h3>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>https://cloudflare-pages-vpn.pages.dev/ChromeGo/all_merged_proxies_shadowrocket_nekoray.txt
+</code></pre></div>
+                </article>
+            </body>
+        </html>
+        
