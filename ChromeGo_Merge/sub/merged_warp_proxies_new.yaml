@@ -53,9 +53,9 @@ proxies:
   dialer-proxy: WARP前置节点
 - name: meta_tuic_01
   server: 109.104.152.219
-  port: 50981
+  port: 19008
   type: tuic
-  uuid: e31f5163-0da9-448e-8ff5-2930a74ae250
+  uuid: 9f8c2f3e-cb9e-410f-9b87-f1615ac1a1bb
   password: dongtaiwang.com
   sni: bing.com
   alpn:
@@ -126,18 +126,17 @@ proxies:
   skip-cert-verify: true
   congestion-controller: bbr
 - name: meta_tuic_61
-  server: tuic4.dtku47.xyz
-  port: 12980
+  server: 108.181.22.239
+  port: 26789
   type: tuic
-  uuid: ea8be14e-f82a-43ae-90b2-e110a7c7e164
-  password: dongtaiwang.com
-  sni: tuic4.dtku47.xyz
+  uuid: a6ccf4f3-2b05-48ff-b440-2e3dce3e216a
+  password: iLHa7ogC0RjF
+  sni: bing.com
   alpn:
   - h3
   request-timeout: 8000
   udp-relay-mode: native
-  skip-cert-verify: false
-  congestion-controller: bbr
+  skip-cert-verify: true
 - name: meta_hysteria_71
   type: hysteria
   server: www.dtku50.xyz
@@ -150,19 +149,19 @@ proxies:
   auth_str: 2S9M5Gs0pgRsaTObNghoLZx6wPkBJOGTFWvf4R06Us5hUNtfr7
   up: 2
   down: 10
-- name: meta_vless_81
-  type: vless
-  server: 45.150.165.87
-  port: 25678
-  udp: true
-  uuid: 34f36b97-1fb7-41f3-8db4-912cc69e724a
-  tls: true
-  servername: itunes.apple.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: sJsSZcA2DyAHDTcoe8Utbz9JaXJPMVmtHmiXxWmcExc
-  client-fingerprint: chrome
+- name: meta_tuic_81
+  server: tuic1.freeh1.xyz
+  port: 40981
+  type: tuic
+  uuid: c2faac69-e1c1-4bf5-b8a8-d2ce4d834a66
+  password: dongtaiwang
+  sni: tuic1.freeh1.xyz
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: false
+  congestion-controller: bbr
 - name: meta_hysteria_91
   type: hysteria
   server: www3.dtku49.xyz
@@ -250,7 +249,7 @@ proxies:
 - name: hysteria2_2
   type: hysteria2
   server: www.dtku48.xyz
-  port: 7483
+  port: 26458
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -308,7 +307,7 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_vless_81
+  - meta_tuic_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -331,7 +330,7 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_vless_81
+  - meta_tuic_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -354,7 +353,7 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_vless_81
+  - meta_tuic_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
