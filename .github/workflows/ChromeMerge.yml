@@ -10,6 +10,9 @@ on:
 jobs:
   merge:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
 
     steps:
       - name: Checkout repository
@@ -29,7 +32,7 @@ jobs:
       - name: Run shadowrocket merge script
         run: cd ChromeGo_Merge && python merge.py  # 替换为你的 merge.py 脚本名称
         
-      # BUG: lgf4591/cloudflare-pages-vpn.git denied to github-actions[bot]
+      # # BUG: lgf4591/cloudflare-pages-vpn.git denied to github-actions[bot]  ->  ref: https://machbbs.com/v2ex/508380
       # - name: Commit Changes
       #   run: |
       #     git config core.ignorecase false
@@ -38,3 +41,16 @@ jobs:
       #     git add .
       #     git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
       #     git push
+
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "github action auto build" -a
+          
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.ACTIONS_TOKEN }}
+          branch: main  
