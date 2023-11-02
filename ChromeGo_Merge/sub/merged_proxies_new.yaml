@@ -46,6 +46,17 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
+- name: meta_hysteria2_02
+  type: hysteria2
+  server: 167.160.90.251
+  port: 10981
+  password: i2XRv7zj1uWE
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 100 Mbps
+  down: 50 Mbps
 - name: meta_tuic_11
   server: tuic1.freeh1.xyz
   port: 40981
@@ -267,6 +278,7 @@ proxy-groups:
   - DIRECT
   - 油管-绵阿羊
   - meta_tuic_01
+  - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -293,6 +305,7 @@ proxy-groups:
   proxies:
   - 油管-绵阿羊
   - meta_tuic_01
+  - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
