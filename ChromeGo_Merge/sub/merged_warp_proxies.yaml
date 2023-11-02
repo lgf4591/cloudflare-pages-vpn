@@ -149,12 +149,20 @@ proxies:
   auth_str: 2S9M5Gs0pgRsaTObNghoLZx6wPkBJOGTFWvf4R06Us5hUNtfr7
   up: 2
   down: 10
-- name: meta_ss_81
-  type: ss
-  server: 45.145.72.223
-  port: 19981
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2fvT8DSm5gQ9njDuL0licBN29TVJeuS5sbt2ZBwUdUs=
+- name: meta_vless_81
+  type: vless
+  server: 45.150.165.121
+  port: 10306
+  udp: true
+  uuid: 89a3befc-045b-4287-8b9f-f51c455f93be
+  tls: true
+  servername: mensura.cdn-apple.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: ec05-gX8GbyAZaJ72G4AWIadOsDk2_sZCDliuHZnwBc
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: meta_hysteria_91
   type: hysteria
   server: www3.dtku49.xyz
@@ -268,7 +276,7 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_ss_81
+  - meta_vless_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -287,7 +295,7 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_ss_81
+  - meta_vless_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -306,7 +314,7 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_ss_81
+  - meta_vless_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
