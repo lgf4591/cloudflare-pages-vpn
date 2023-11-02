@@ -171,14 +171,14 @@ proxies:
 - name: hysteria_0
   type: hysteria
   server: 108.181.22.239
-  port: 17727
-  ports: 17727
-  auth_str: 7YxfKsXdTnB226S8j4OjaA9M0nLcXATvgnXhVJbCRG7e9KKU7i
+  port: 61561
+  ports: 61561
+  auth_str: PBhG3zqMKaMO5ZnemDvLrZ6v0Fd7EqCutDvzLNtvWHJ6IpMWJg
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: youku.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
