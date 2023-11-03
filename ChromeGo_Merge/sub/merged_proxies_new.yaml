@@ -119,17 +119,18 @@ proxies:
   skip-cert-verify: true
   congestion-controller: bbr
 - name: meta_tuic_61
-  server: 108.181.22.239
-  port: 26789
+  server: www2.dtku49.xyz
+  port: 19881
   type: tuic
-  uuid: a6ccf4f3-2b05-48ff-b440-2e3dce3e216a
-  password: iLHa7ogC0RjF
+  uuid: 45e2b23a-1a49-49c4-9422-8d786887ef3d
+  password: 51UMpwpdw0Kw
   sni: bing.com
   alpn:
   - h3
   request-timeout: 8000
   udp-relay-mode: native
   skip-cert-verify: true
+  congestion-controller: bbr
 - name: meta_hysteria_71
   type: hysteria
   server: www.dtku50.xyz
@@ -243,7 +244,7 @@ proxies:
 - name: hysteria2_2
   type: hysteria2
   server: www.dtku48.xyz
-  port: 26458
+  port: 43735
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
