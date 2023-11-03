@@ -163,16 +163,16 @@ proxies:
   down: 10
 - name: meta_vless_81
   type: vless
-  server: 45.150.165.121
-  port: 10306
+  server: 45.145.72.212
+  port: 443
   udp: true
-  uuid: 89a3befc-045b-4287-8b9f-f51c455f93be
+  uuid: 9fb058d9-f8f4-435d-988d-731ee5d087ad
   tls: true
-  servername: mensura.cdn-apple.com
+  servername: aod.itunes.apple.com
   flow: xtls-rprx-vision
   network: tcp
   reality-opts:
-    public-key: ec05-gX8GbyAZaJ72G4AWIadOsDk2_sZCDliuHZnwBc
+    public-key: Vlcavce9BuM8Q464JEff4gFUMmDkEFuqYbjjIilbe00
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
 - name: meta_hysteria_91
