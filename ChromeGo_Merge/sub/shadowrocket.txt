@@ -6,8 +6,8 @@ tuic://3618921b-adeb-4bd3-a2a0-f98b72a674b1:dongtaiwang@108.181.24.7:23450?sni=b
 hysteria://www.dtku46.xyz:11223?peer=&auth=mqoE9qSoyMFa&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=11223&obfs=&protocol=udp&fastopen=1#hysteria_meta_4
 tuic://d6214437-e1b5-4334-9090-8f66b78bea89:dongtaiwang@108.181.22.205:50987?sni=bing.com&congestion_control=bbr&udp_relay_mode=native&alpn=h3&allow_insecure=1
 tuic://45e2b23a-1a49-49c4-9422-8d786887ef3d:51UMpwpdw0Kw@www2.dtku49.xyz:19881?sni=bing.com&congestion_control=bbr&udp_relay_mode=native&alpn=h3&allow_insecure=1
-hysteria://www.dtku50.xyz:43250?peer=bing.com&auth=&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=43250&obfs=&protocol=udp&fastopen=1#hysteria_meta_7
-tuic://45e2b23a-1a49-49c4-9422-8d786887ef3d:51UMpwpdw0Kw@www2.dtku49.xyz:19881?sni=bing.com&congestion_control=bbr&udp_relay_mode=native&alpn=h3&allow_insecure=1
+hysteria://www.dtku50.xyz:14751?peer=www.microsoft.com&auth=&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=14751&obfs=&protocol=udp&fastopen=1#hysteria_meta_7
+hysteria://62.204.54.81:37899?peer=www.microsoft.com&auth=&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=37899&obfs=&protocol=udp&fastopen=1#hysteria_meta_8
 hysteria://www3.dtku49.xyz:58693?peer=bing.com&auth=&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=58693&obfs=&protocol=udp&fastopen=1#hysteria_meta_9
 aHR0cHM6Ly9kb25ndGFpd2FuZy5jb206ZG9uZ3RhaXdhbmcuY29tQHd3dy5kdGt1NDgueHl6OjQ0Mw==
 aHR0cHM6Ly9kb25ndGFpd2FuZy5jb206ZG9uZ3RhaXdhbmcuY29tQG5haXZlMTYuY2ZjZG4zLnh5ejo0NDM=
