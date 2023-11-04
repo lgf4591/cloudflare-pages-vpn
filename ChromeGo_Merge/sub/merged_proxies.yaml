@@ -143,20 +143,19 @@ proxies:
   auth_str: 2S9M5Gs0pgRsaTObNghoLZx6wPkBJOGTFWvf4R06Us5hUNtfr7
   up: 2
   down: 10
-- name: meta_vless_81
-  type: vless
-  server: 45.145.72.212
-  port: 443
-  udp: true
-  uuid: 9fb058d9-f8f4-435d-988d-731ee5d087ad
-  tls: true
-  servername: aod.itunes.apple.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: Vlcavce9BuM8Q464JEff4gFUMmDkEFuqYbjjIilbe00
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+- name: meta_tuic_81
+  server: www2.dtku49.xyz
+  port: 19881
+  type: tuic
+  uuid: 45e2b23a-1a49-49c4-9422-8d786887ef3d
+  password: 51UMpwpdw0Kw
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: meta_hysteria_91
   type: hysteria
   server: www3.dtku49.xyz
@@ -255,7 +254,7 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_vless_81
+  - meta_tuic_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -278,7 +277,7 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_vless_81
+  - meta_tuic_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
