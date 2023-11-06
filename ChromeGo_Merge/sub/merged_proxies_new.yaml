@@ -56,7 +56,7 @@ proxies:
   sni: bing.com
   skip-cert-verify: true
   up: 100 Mbps
-  down: 50 Mbps
+  down: 100 Mbps
 - name: meta_tuic_11
   server: tuic1.freeh1.xyz
   port: 40981
