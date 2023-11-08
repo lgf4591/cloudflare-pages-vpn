@@ -241,20 +241,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: reality_3
-  type: vless
-  server: 109.104.152.156
-  port: 16717
-  uuid: a2971a3e-d013-47b2-93c8-2ff2a4bcff2a
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: aod.itunes.apple.com
-  reality-opts:
-    public-key: ydGuypY0EPIAxMpi8L-yhWBtjyavZbtwo9JJk2K5G0Y
-    short-id: 6ba85179e30d4fc2
 proxy-groups:
 - name: 节点选择
   type: select
@@ -293,7 +279,6 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_3
 - name: 手动选择
   type: select
   proxies:
@@ -313,7 +298,6 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_3
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -333,7 +317,6 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_3
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
