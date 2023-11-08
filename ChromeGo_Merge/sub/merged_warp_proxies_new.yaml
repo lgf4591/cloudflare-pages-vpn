@@ -120,8 +120,8 @@ proxies:
   alpn:
   - h3
   protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
 - name: meta_tuic_51
   server: 108.181.22.205
@@ -244,7 +244,7 @@ proxies:
 - name: hysteria2_0
   type: hysteria2
   server: www.dtku46.xyz
-  port: 13579
+  port: 49730
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
