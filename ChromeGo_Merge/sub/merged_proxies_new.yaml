@@ -33,19 +33,17 @@ proxies:
   udp: true
   sni: gw.alicdn.com
   skip-cert-verify: true
-- name: meta_tuic_01
+- name: meta_hysteria2_01
+  type: hysteria2
   server: 109.104.152.219
-  port: 19008
-  type: tuic
-  uuid: 9f8c2f3e-cb9e-410f-9b87-f1615ac1a1bb
+  port: 34091
   password: dongtaiwang.com
-  sni: bing.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  sni: bing.com
   skip-cert-verify: true
-  congestion-controller: bbr
+  up: 100 Mbps
+  down: 100 Mbps
 - name: meta_hysteria2_02
   type: hysteria2
   server: 167.160.90.251
@@ -262,7 +260,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - 油管-绵阿羊
-  - meta_tuic_01
+  - meta_hysteria2_01
   - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
@@ -288,7 +286,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 油管-绵阿羊
-  - meta_tuic_01
+  - meta_hysteria2_01
   - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
