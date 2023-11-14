@@ -258,7 +258,7 @@ proxies:
 - name: hysteria2_2
   type: hysteria2
   server: www.dtku48.xyz
-  port: 51665
+  port: 57298
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
