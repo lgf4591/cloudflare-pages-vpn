@@ -36,7 +36,7 @@ proxies:
 - name: meta_hysteria2_01
   type: hysteria2
   server: 109.104.152.219
-  port: 34091
+  port: 22309
   password: dongtaiwang.com
   alpn:
   - h3
@@ -152,7 +152,7 @@ proxies:
   protocol: udp
   auth_str: OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB
   up: 10
-  down: 40
+  down: 30
 - name: meta_hysteria_91
   type: hysteria
   server: www3.dtku49.xyz
