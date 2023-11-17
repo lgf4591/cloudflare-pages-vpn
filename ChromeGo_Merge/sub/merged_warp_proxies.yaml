@@ -62,6 +62,17 @@ proxies:
   skip-cert-verify: true
   up: 100 Mbps
   down: 100 Mbps
+- name: meta_hysteria_02
+  type: hysteria
+  server: 167.160.90.251
+  port: 48089
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
 - name: meta_tuic_11
   server: tuic1.freeh1.xyz
   port: 40981
@@ -252,6 +263,7 @@ proxy-groups:
   proxies:
   - 油管-绵阿羊
   - meta_hysteria2_01
+  - meta_hysteria_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -270,6 +282,7 @@ proxy-groups:
   proxies:
   - 油管-绵阿羊
   - meta_hysteria2_01
+  - meta_hysteria_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -288,6 +301,7 @@ proxy-groups:
   proxies:
   - 油管-绵阿羊
   - meta_hysteria2_01
+  - meta_hysteria_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
