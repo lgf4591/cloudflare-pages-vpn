@@ -152,7 +152,7 @@ proxies:
   protocol: udp
   auth_str: OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB
   up: 10
-  down: 30
+  down: 20
 - name: meta_hysteria_91
   type: hysteria
   server: www3.dtku49.xyz
