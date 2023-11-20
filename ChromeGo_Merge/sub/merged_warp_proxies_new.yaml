@@ -250,7 +250,7 @@ proxies:
 - name: hysteria2_1
   type: hysteria2
   server: 108.181.22.155
-  port: 4795
+  port: 44141
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -258,7 +258,7 @@ proxies:
 - name: hysteria2_2
   type: hysteria2
   server: www.dtku48.xyz
-  port: 20231
+  port: 26806
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -266,7 +266,7 @@ proxies:
 - name: hysteria2_3
   type: hysteria2
   server: 108.181.22.155
-  port: 4795
+  port: 44141
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
