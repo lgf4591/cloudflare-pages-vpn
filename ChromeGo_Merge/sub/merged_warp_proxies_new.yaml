@@ -65,7 +65,7 @@ proxies:
 - name: meta_hysteria2_02
   type: hysteria2
   server: 109.104.152.219
-  port: 13298
+  port: 13133
   password: dongtaiwang.com
   alpn:
   - h3
