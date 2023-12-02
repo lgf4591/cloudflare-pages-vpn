@@ -44,15 +44,16 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: meta_hysteria2_02
-  type: hysteria2
+- name: meta_hysteria_02
+  type: hysteria
   server: 109.104.152.219
-  port: 13133
-  password: dongtaiwang.com
-  alpn:
-  - h3
+  port: 22335
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 100 Mbps
   down: 100 Mbps
 - name: meta_tuic_11
@@ -254,7 +255,7 @@ proxy-groups:
   - DIRECT
   - 油管-绵阿羊
   - meta_hysteria_01
-  - meta_hysteria2_02
+  - meta_hysteria_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -279,7 +280,7 @@ proxy-groups:
   proxies:
   - 油管-绵阿羊
   - meta_hysteria_01
-  - meta_hysteria2_02
+  - meta_hysteria_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
