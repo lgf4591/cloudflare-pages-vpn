@@ -143,7 +143,20 @@ proxies:
   auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
   up: 2
   down: 10
-- name: meta_hysteria_81
+- name: meta_tuic_81
+  server: 109.104.152.180
+  port: 22335
+  type: tuic
+  uuid: e78e1e93-a648-4974-b544-68f8b9fa0b81
+  password: dongtaiwang.com
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bb
+- name: meta_hysteria_91
   type: hysteria
   server: 62.204.54.81
   port: 42691
@@ -155,19 +168,6 @@ proxies:
   auth_str: dongtaiwang.com
   up: 5
   down: 10
-- name: meta_tuic_91
-  server: 108.181.22.239
-  port: 19988
-  type: tuic
-  uuid: 485ce799-da5f-46e8-a82b-8ef322d8602f
-  password: dongtaiwang.com
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: hysteria_0
   type: hysteria
   server: 109.104.152.180
@@ -240,8 +240,8 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_hysteria_81
-  - meta_tuic_91
+  - meta_tuic_81
+  - meta_hysteria_91
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -262,8 +262,8 @@ proxy-groups:
   - meta_tuic_51
   - meta_tuic_61
   - meta_hysteria_71
-  - meta_hysteria_81
-  - meta_tuic_91
+  - meta_tuic_81
+  - meta_hysteria_91
   - hysteria_0
   - hysteria_1
   - hysteria_2
