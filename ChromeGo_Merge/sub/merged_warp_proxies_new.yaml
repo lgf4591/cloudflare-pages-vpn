@@ -186,15 +186,15 @@ proxies:
   down: 10
 - name: hysteria_0
   type: hysteria
-  server: 109.104.152.180
-  port: 40522
-  ports: 40522
-  auth_str: dongtaiwang.com
+  server: 108.181.22.239
+  port: 61561
+  ports: 61561
+  auth_str: PBhG3zqMKaMO5ZnemDvLrZ6v0Fd7EqCutDvzLNtvWHJ6IpMWJg
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
