@@ -147,7 +147,19 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: meta_tuic_71
+- name: meta_hysteria_71
+  type: hysteria
+  server: www.dtku50.xyz
+  port: 23577
+  sni: www.amazon.cn
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 2
+  down: 10
+- name: meta_tuic_81
   server: 109.104.152.180
   port: 22335
   type: tuic
@@ -160,18 +172,6 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bb
-- name: meta_hysteria_81
-  type: hysteria
-  server: www.dtku50.xyz
-  port: 23577
-  sni: www.amazon.cn
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 2
-  down: 10
 - name: meta_hysteria_91
   type: hysteria
   server: 62.204.54.81
@@ -186,15 +186,15 @@ proxies:
   down: 10
 - name: hysteria_0
   type: hysteria
-  server: 108.181.22.239
-  port: 61561
-  ports: 61561
-  auth_str: PBhG3zqMKaMO5ZnemDvLrZ6v0Fd7EqCutDvzLNtvWHJ6IpMWJg
+  server: 167.160.91.115
+  port: 41189
+  ports: 41189
+  auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
   - h3
@@ -214,15 +214,15 @@ proxies:
   - h3
 - name: hysteria_2
   type: hysteria
-  server: 109.104.152.149
-  port: 48406
-  ports: 48406
-  auth_str: xfNhrunYJ9GvDXCTktY2bIwhc1EyeyyAbiUMx1UtBOWgI4cMVB
+  server: 108.181.22.239
+  port: 41146
+  ports: 41146
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.amazon.cn
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -271,8 +271,8 @@ proxy-groups:
   - meta_hysteria_41
   - meta_tuic_51
   - meta_hysteria_61
-  - meta_tuic_71
-  - meta_hysteria_81
+  - meta_hysteria_71
+  - meta_tuic_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -290,8 +290,8 @@ proxy-groups:
   - meta_hysteria_41
   - meta_tuic_51
   - meta_hysteria_61
-  - meta_tuic_71
-  - meta_hysteria_81
+  - meta_hysteria_71
+  - meta_tuic_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -309,8 +309,8 @@ proxy-groups:
   - meta_hysteria_41
   - meta_tuic_51
   - meta_hysteria_61
-  - meta_tuic_71
-  - meta_hysteria_81
+  - meta_hysteria_71
+  - meta_tuic_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
