@@ -211,8 +211,8 @@ proxies:
 - name: hysteria_2
   type: hysteria
   server: 108.181.22.239
-  port: 41146
-  ports: 41146
+  port: 39967
+  ports: 39967
   auth_str: dongtaiwang.com
   up: 80
   down: 100
