@@ -156,10 +156,10 @@ proxies:
   up: 2
   down: 10
 - name: meta_tuic_81
-  server: 108.181.22.239
-  port: 45600
+  server: 104.234.70.41
+  port: 22334
   type: tuic
-  uuid: 4576f920-975b-4ab4-b53a-bdcfa623124d
+  uuid: 3aafb5c0-b76b-4218-8f34-18075cd593f2
   password: dongtaiwang.com
   sni: bing.com
   alpn:
@@ -171,7 +171,7 @@ proxies:
 - name: meta_hysteria_91
   type: hysteria
   server: 62.204.54.81
-  port: 42691
+  port: 46333
   sni: bing.com
   skip-cert-verify: true
   alpn:
