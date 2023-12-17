@@ -168,6 +168,19 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
+- name: meta_tuic_82
+  server: 104.234.70.41
+  port: 11223
+  type: tuic
+  uuid: c573056f-e44b-4244-8142-136753c3debe
+  password: dongtaiwang.com
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: meta_hysteria_91
   type: hysteria
   server: 62.204.54.81
@@ -269,6 +282,7 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
+  - meta_tuic_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -288,6 +302,7 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
+  - meta_tuic_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -307,6 +322,7 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
+  - meta_tuic_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
