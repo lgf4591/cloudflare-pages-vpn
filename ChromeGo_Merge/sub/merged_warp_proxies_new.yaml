@@ -156,10 +156,10 @@ proxies:
   up: 2
   down: 10
 - name: meta_tuic_81
-  server: 104.234.70.41
-  port: 22334
+  server: 64.110.25.10
+  port: 11227
   type: tuic
-  uuid: 3aafb5c0-b76b-4218-8f34-18075cd593f2
+  uuid: 764b539f-2d3c-4772-9731-5ebf6984af98
   password: dongtaiwang.com
   sni: bing.com
   alpn:
