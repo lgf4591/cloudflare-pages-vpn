@@ -58,7 +58,7 @@ proxies:
 - name: meta_hysteria_11
   type: hysteria
   server: 108.181.22.213
-  port: 61834
+  port: 52284
   auth-str: dongtaiwang.com
   alpn:
   - h3
@@ -66,30 +66,28 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: meta_tuic_21
-  server: tuic3.dtku47.xyz
-  port: 12255
-  type: tuic
-  uuid: ed6a538a-6e66-4f21-a769-4b389bb2f3ab
-  password: dongtaiwang
+- name: meta_hysteria_21
+  type: hysteria
+  server: 108.181.22.155
+  port: 19721
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: meta_tuic_31
-  server: 108.181.24.7
-  port: 23450
-  type: tuic
-  uuid: 3618921b-adeb-4bd3-a2a0-f98b72a674b1
-  password: dongtaiwang
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
+- name: meta_hysteria_31
+  server: 104.234.70.41
+  type: hysteria
+  port: 21025
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
 - name: meta_hysteria_41
   type: hysteria
   server: www.dtku46.xyz
@@ -101,19 +99,17 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: meta_tuic_51
-  server: 108.181.22.205
-  port: 50987
-  type: tuic
-  uuid: d6214437-e1b5-4334-9090-8f66b78bea89
-  password: dongtaiwang
-  sni: bing.com
+- name: meta_hysteria_51
+  server: 104.234.70.6
+  type: hysteria
+  port: 16117
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
 - name: meta_hysteria_61
   type: hysteria
   server: www.dtku46.xyz
@@ -241,10 +237,10 @@ proxy-groups:
   - meta_hysteria_01
   - meta_hysteria_02
   - meta_hysteria_11
-  - meta_tuic_21
-  - meta_tuic_31
+  - meta_hysteria_21
+  - meta_hysteria_31
   - meta_hysteria_41
-  - meta_tuic_51
+  - meta_hysteria_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
@@ -264,10 +260,10 @@ proxy-groups:
   - meta_hysteria_01
   - meta_hysteria_02
   - meta_hysteria_11
-  - meta_tuic_21
-  - meta_tuic_31
+  - meta_hysteria_21
+  - meta_hysteria_31
   - meta_hysteria_41
-  - meta_tuic_51
+  - meta_hysteria_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
