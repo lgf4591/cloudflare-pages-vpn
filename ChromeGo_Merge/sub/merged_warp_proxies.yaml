@@ -98,7 +98,7 @@ proxies:
 - name: meta_hysteria_31
   server: 104.234.70.41
   type: hysteria
-  port: 21025
+  port: 57153
   auth-str: dongtaiwang.com
   alpn:
   - h3
