@@ -172,8 +172,8 @@ proxies:
   alpn:
   - h3
   sni: bing.com
-  up: 5 Mbps
-  down: 10 Mbps
+  up: 1 Mbps
+  down: 5 Mbps
   skip-cert-verify: true
 - name: meta_hysteria_91
   type: hysteria
