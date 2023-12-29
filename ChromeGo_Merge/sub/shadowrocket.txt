@@ -20,6 +20,6 @@ hysteria2://dongtaiwang.com@108.181.22.155:27710?insecure=1&sni=www.bing.com#hys
 hysteria2://dongtaiwang.com@167.160.90.252:63530?insecure=1&sni=www.bing.com#hysteria2_2
 hysteria2://dongtaiwang.com@108.181.22.155:27710?insecure=1&sni=www.bing.com#hysteria2_3
 vless://ffb15cd2-0521-49de-b8aa-fb15d58c8075@dongtaiwang3.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=v2ray3.freegradely.xyz&serviceName=&path=/bqbows&host=v2ray3.freegradely.xyz#vless_0
-vless://f5c180eb-fbce-49ac-9029-482eca9385c0@dongtaiwang3.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freeh1.xyz&serviceName=&path=/gzogws&host=xray1.freeh1.xyz#vless_1
+vless://0773256c-d020-436d-afea-6eee7cb6c872@dongtaiwang3.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freegradely.xyz&serviceName=&path=/bodhws&host=xray1.freegradely.xyz#vless_1
 vless://3cf5352c-ba83-40d2-a661-df6affa019eb@dongtaiwang2.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=yhc1.freeh1.xyz&serviceName=&path=/kdnhws&host=yhc1.freeh1.xyz#vless_2
-vless://f5c180eb-fbce-49ac-9029-482eca9385c0@cloudflare.cfgo.cc:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freeh1.xyz&serviceName=&path=/gzogws&host=xray1.freeh1.xyz#vless_3
+vless://0773256c-d020-436d-afea-6eee7cb6c872@cloudflare.cfgo.cc:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freegradely.xyz&serviceName=&path=/bodhws&host=xray1.freegradely.xyz#vless_3
