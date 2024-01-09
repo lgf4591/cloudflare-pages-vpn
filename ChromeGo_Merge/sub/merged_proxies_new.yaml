@@ -124,7 +124,7 @@ proxies:
 - name: meta_hysteria_71
   type: hysteria
   server: www.dtku50.xyz
-  port: 23577
+  port: 56252
   sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
@@ -225,7 +225,7 @@ proxies:
 - name: hysteria2_1
   type: hysteria2
   server: 108.181.22.155
-  port: 27710
+  port: 31721
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -233,7 +233,7 @@ proxies:
 - name: hysteria2_3
   type: hysteria2
   server: 108.181.22.155
-  port: 27710
+  port: 31721
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com

@@ -142,7 +142,7 @@ proxies:
 - name: meta_hysteria_71
   type: hysteria
   server: www.dtku50.xyz
-  port: 23577
+  port: 56252
   sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
