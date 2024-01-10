@@ -96,9 +96,9 @@ proxies:
   down: 55 Mbps
   skip-cert-verify: true
 - name: meta_hysteria_31
-  server: 104.234.70.41
+  server: 108.181.2.154
   type: hysteria
-  port: 57153
+  port: 33445
   auth-str: dongtaiwang.com
   alpn:
   - h3
@@ -118,9 +118,9 @@ proxies:
   down: 55 Mbps
   skip-cert-verify: true
 - name: meta_hysteria_51
-  server: 104.234.70.6
+  server: 167.160.91.116
   type: hysteria
-  port: 11330
+  port: 55009
   auth-str: dongtaiwang.com
   alpn:
   - h3
