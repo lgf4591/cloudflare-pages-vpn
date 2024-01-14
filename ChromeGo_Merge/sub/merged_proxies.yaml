@@ -89,10 +89,10 @@ proxies:
   down: 55 Mbps
   skip-cert-verify: true
 - name: meta_hysteria_41
+  server: 108.181.2.154
   type: hysteria
-  server: www.dtku46.xyz
-  port: 11223
-  auth-str: mqoE9qSoyMFa
+  port: 33445
+  auth-str: dongtaiwang.com
   alpn:
   - h3
   protocol: udp
@@ -112,9 +112,9 @@ proxies:
   skip-cert-verify: true
 - name: meta_hysteria_61
   type: hysteria
-  server: www.dtku46.xyz
-  port: 11223
-  auth-str: mqoE9qSoyMFa
+  server: 64.110.25.10
+  port: 44556
+  auth-str: dongtaiwang.com
   alpn:
   - h3
   protocol: udp
@@ -133,19 +133,17 @@ proxies:
   auth_str: dongtaiwang.com
   up: 2
   down: 10
-- name: meta_tuic_81
+- name: meta_hysteria_81
+  type: hysteria
   server: 64.110.25.10
-  port: 33445
-  type: tuic
-  uuid: 670998c6-a78f-43cc-86aa-29292476e040
-  password: dongtaiwang.com
-  sni: bing.com
+  port: 44556
+  auth-str: dongtaiwang.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  congestion-controller: bbr
 - name: meta_hysteria_91
   type: hysteria
   server: 62.204.54.81
@@ -230,7 +228,7 @@ proxy-groups:
   - meta_hysteria_51
   - meta_hysteria_61
   - meta_hysteria_71
-  - meta_tuic_81
+  - meta_hysteria_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -252,7 +250,7 @@ proxy-groups:
   - meta_hysteria_51
   - meta_hysteria_61
   - meta_hysteria_71
-  - meta_tuic_81
+  - meta_hysteria_81
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
