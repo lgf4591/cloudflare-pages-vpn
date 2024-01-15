@@ -51,17 +51,21 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: meta_hysteria_01
-  type: hysteria
-  server: 167.160.90.252
-  port: 48089
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: meta_vmess_01
+  type: vmess
+  server: dongtaiwang3.com
+  port: 443
+  cipher: auto
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  alterId: 0
+  tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /gzogws
+    headers:
+      host: xray1.freeh1.xyz
 - name: meta_vmess_11
   type: vmess
   server: dongtaiwang2.com
@@ -90,16 +94,24 @@ proxies:
     headers:
       host: v2ray3.freegradely.xyz
   client-fingerprint: chrome
-- name: meta_hysteria2_31
-  type: hysteria2
-  server: 108.181.2.155
-  port: 22223
-  password: dongtaiwang.com
-  sni: bing.com
+- name: meta_vmess_31
+  type: vmess
+  server: dongtaiwang3.com
+  port: 443
+  cipher: auto
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  alterId: 0
+  tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /gzogws
+    headers:
+      host: xray1.freeh1.xyz
 - name: meta_hysteria_41
   type: hysteria
-  server: www4.dtku49.xyz
+  server: 111.243.97.209
   port: 22334
   auth-str: dongtaiwang.com
   alpn:
@@ -108,13 +120,21 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
-- name: meta_hysteria2_51
-  type: hysteria2
-  server: 108.181.5.19
-  port: 44446
-  password: dongtaiwang.com
-  sni: bing.com
+- name: meta_vmess_51
+  type: vmess
+  server: cloudflare.cfgo.cc
+  port: 443
+  cipher: auto
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  alterId: 0
+  tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /gzogws
+    headers:
+      host: xray1.freeh1.xyz
 - name: meta_hysteria_61
   type: hysteria
   server: www4.dtku49.xyz
@@ -240,12 +260,12 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 油管-绵阿羊
-  - meta_hysteria_01
+  - meta_vmess_01
   - meta_vmess_11
   - meta_vless_21
-  - meta_hysteria2_31
+  - meta_vmess_31
   - meta_hysteria_41
-  - meta_hysteria2_51
+  - meta_vmess_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria_81
@@ -258,12 +278,12 @@ proxy-groups:
   type: select
   proxies:
   - 油管-绵阿羊
-  - meta_hysteria_01
+  - meta_vmess_01
   - meta_vmess_11
   - meta_vless_21
-  - meta_hysteria2_31
+  - meta_vmess_31
   - meta_hysteria_41
-  - meta_hysteria2_51
+  - meta_vmess_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria_81
@@ -276,12 +296,12 @@ proxy-groups:
   type: load-balance
   proxies:
   - 油管-绵阿羊
-  - meta_hysteria_01
+  - meta_vmess_01
   - meta_vmess_11
   - meta_vless_21
-  - meta_hysteria2_31
+  - meta_vmess_31
   - meta_hysteria_41
-  - meta_hysteria2_51
+  - meta_vmess_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria_81
