@@ -59,21 +59,26 @@ proxies:
     headers:
       host: dongtaiwang.dtku47.xyz
   client-fingerprint: chrome
-- name: meta_vmess_11
-  type: vmess
-  server: dongtaiwang2.com
-  port: 443
-  cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
-  alterId: 0
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /gzogws
-    headers:
-      host: xray1.freeh1.xyz
+- name: meta_ss_11
+  type: ss
+  server: 167.160.90.252
+  port: 8883
+  cipher: 2022-blake3-aes-128-gcm
+  password: lolvK9uAhEDYTMuqCRblBg==
+  plugin: shadow-tls
+  client-fingerprint: chrome
+  plugin-opts:
+    host: addons.mozilla.org
+    password: d3971b31-e16b-4af2-b430-afb896380543
+    version: 3
+  smux:
+    enabled: true
+    protocol: h2mux
+    padding: true
+    max-connections: '8'
+    min-streams: '16'
+    statistic: true
+    only-tcp: false
 - name: meta_vless_21
   type: vless
   server: dongtaiwang2.com
@@ -153,40 +158,37 @@ proxies:
   auth_str: dongtaiwang.com
   up: 2
   down: 10
-- name: meta_hysteria_81
-  type: hysteria
-  server: 64.110.25.10
-  port: 44556
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
+- name: meta_hysteria2_81
+  type: hysteria2
+  server: 51.158.54.46
+  port: 23400
   up: 11 Mbps
   down: 55 Mbps
+  password: d64df453-34f0-4fa8-b115-e6805f6d54db
+  obfs: salamander
+  obfs-password: d64df453-34f0-4fa8-b115-e6805f6d54db
   skip-cert-verify: true
-- name: meta_hysteria_91
-  type: hysteria
-  server: 62.204.54.81
-  port: 62946
-  sni: bing.com
+- name: meta_hysteria2_91
+  type: hysteria2
+  server: 45.150.165.84
+  port: 33440
+  password: d017e316-82cb-441c-8eea-7b5e9de64a20
+  obfs: salamander
+  obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20
   skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 5
-  down: 10
+  up: 2 Mbps
+  down: 10 Mbps
 - name: hysteria_0
   type: hysteria
-  server: 167.160.91.115
-  port: 41189
-  ports: 41189
-  auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF
+  server: 51.158.54.46
+  port: 55396
+  ports: 55396
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.amazon.cn
+  sni: youku.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -220,15 +222,15 @@ proxies:
   - h3
 - name: hysteria_3
   type: hysteria
-  server: 51.158.54.46
-  port: 55396
-  ports: 55396
-  auth_str: dongtaiwang.com
+  server: 167.160.91.115
+  port: 41189
+  ports: 41189
+  auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: youku.com
+  sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
   - h3
@@ -241,15 +243,15 @@ proxy-groups:
   - 油管-绵阿羊
   - meta_vless_01
   - meta_vless_02
-  - meta_vmess_11
+  - meta_ss_11
   - meta_vless_21
   - meta_vless_31
   - meta_vmess_41
   - meta_vmess_51
   - meta_hysteria_61
   - meta_hysteria_71
-  - meta_hysteria_81
-  - meta_hysteria_91
+  - meta_hysteria2_81
+  - meta_hysteria2_91
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -263,15 +265,15 @@ proxy-groups:
   - 油管-绵阿羊
   - meta_vless_01
   - meta_vless_02
-  - meta_vmess_11
+  - meta_ss_11
   - meta_vless_21
   - meta_vless_31
   - meta_vmess_41
   - meta_vmess_51
   - meta_hysteria_61
   - meta_hysteria_71
-  - meta_hysteria_81
-  - meta_hysteria_91
+  - meta_hysteria2_81
+  - meta_hysteria2_91
   - hysteria_0
   - hysteria_1
   - hysteria_2
