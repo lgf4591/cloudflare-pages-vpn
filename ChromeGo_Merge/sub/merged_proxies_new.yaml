@@ -48,7 +48,7 @@ proxies:
   client-fingerprint: chrome
 - name: meta_vless_02
   type: vless
-  server: dongtaiwang2.com
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: a9202ced-3185-489c-8b28-74e9a00d894d
   tls: true
@@ -81,7 +81,7 @@ proxies:
     only-tcp: false
 - name: meta_vless_21
   type: vless
-  server: dongtaiwang2.com
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: ffb15cd2-0521-49de-b8aa-fb15d58c8075
   tls: true
@@ -94,7 +94,7 @@ proxies:
   client-fingerprint: chrome
 - name: meta_vless_31
   type: vless
-  server: dongtaiwang3.com
+  server: dongtaiwang2.com
   port: 443
   uuid: 869d601c-9e4c-4e83-b816-bb553234aaea
   tls: true
@@ -107,7 +107,7 @@ proxies:
   client-fingerprint: chrome
 - name: meta_vmess_41
   type: vmess
-  server: dongtaiwang2.com
+  server: cm.dongtaiwang3.com
   port: 443
   cipher: auto
   uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
