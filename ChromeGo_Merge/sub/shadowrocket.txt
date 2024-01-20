@@ -1,8 +1,8 @@
 vless://a9202ced-3185-489c-8b28-74e9a00d894d@dongtaiwang3.com:443?security=tls&allowInsecure0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=dongtaiwang.dtku47.xyz&serviceName=&path=/eobjws&host=#vless_meta_0
-vless://a9202ced-3185-489c-8b28-74e9a00d894d@cu.dongtaiwang3.com:443?security=tls&allowInsecure0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=dongtaiwang.dtku47.xyz&serviceName=&path=/eobjws&host=#vless_meta_0
+vless://7b671cd2-233d-406c-88da-1c687727dc52@fr.freeh1.xyz:443?security=tls&allowInsecure0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=fr.freeh1.xyz&serviceName=&path=/kfhaws&host=#vless_meta_0
 ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206bG9sdks5dUFoRURZVE11cUNSYmxCZz09QDE2Ny4xNjAuOTAuMjUyOjg4ODM=
 vless://ffb15cd2-0521-49de-b8aa-fb15d58c8075@cu.dongtaiwang3.com:443?security=tls&allowInsecure0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=v2ray3.freegradely.xyz&serviceName=&path=/bqbows&host=#vless_meta_2
-vless://869d601c-9e4c-4e83-b816-bb553234aaea@dongtaiwang2.com:443?security=tls&allowInsecure0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=dongtaiwang.freeh1.xyz&serviceName=&path=/pxzaws&host=#vless_meta_3
+vless://7b671cd2-233d-406c-88da-1c687727dc52@fr.freeh1.xyz:443?security=tls&allowInsecure0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=fr.freeh1.xyz&serviceName=&path=/kfhaws&host=#vless_meta_3
 hysteria://www2.dtku48.xyz:22334?peer=&auth=dongtaiwang.com&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=22334&obfs=&protocol=udp&fastopen=1#hysteria_meta_6
 hysteria://www.dtku50.xyz:32408?peer=www.amazon.cn&auth=&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=32408&obfs=&protocol=udp&fastopen=1#hysteria_meta_7
 hysteria2://dongtaiwang.com@51.158.54.46:44550?insecure=1&sni=bing.com&obfs=&obfs-password=#hysteria2_meta_8
@@ -17,6 +17,6 @@ hysteria2://dongtaiwang.com@64.110.25.11:33337?insecure=1&sni=www.bing.com#hyste
 hysteria2://dongtaiwang.com@64.110.25.11:33337?insecure=1&sni=www.bing.com#hysteria2_1
 hysteria2://dongtaiwang.com@64.110.25.11:33337?insecure=1&sni=www.bing.com#hysteria2_2
 hysteria2://dongtaiwang.com@108.181.24.77:18775?insecure=1&sni=www.bing.com#hysteria2_3
-vless://ffb15cd2-0521-49de-b8aa-fb15d58c8075@dongtaiwang3.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=v2ray3.freegradely.xyz&serviceName=&path=/bqbows&host=v2ray3.freegradely.xyz#vless_0
+vless://7b671cd2-233d-406c-88da-1c687727dc52@fr.freeh1.xyz:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=fr.freeh1.xyz&serviceName=&path=/kfhaws&host=fr.freeh1.xyz#vless_0
 vless://0773256c-d020-436d-afea-6eee7cb6c872@dongtaiwang2.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freegradely.xyz&serviceName=&path=/bodhws&host=xray1.freegradely.xyz#vless_1
 vless://0773256c-d020-436d-afea-6eee7cb6c872@cu.dongtaiwang3.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freegradely.xyz&serviceName=&path=/bodhws&host=xray1.freegradely.xyz#vless_3
