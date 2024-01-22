@@ -48,7 +48,7 @@ proxies:
   client-fingerprint: chrome
 - name: meta_vless_02
   type: vless
-  server: fr.freeh1.xyz
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
@@ -94,7 +94,7 @@ proxies:
   client-fingerprint: chrome
 - name: meta_vless_31
   type: vless
-  server: fr.freeh1.xyz
+  server: cu.dongtaiwang3.com
   port: 443
   uuid: 7b671cd2-233d-406c-88da-1c687727dc52
   tls: true
