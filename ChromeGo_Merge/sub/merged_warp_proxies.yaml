@@ -79,6 +79,26 @@ proxies:
   client-fingerprint: chrome
 - name: meta_ss_11
   type: ss
+  server: 62.210.103.0
+  port: 12299
+  cipher: 2022-blake3-aes-128-gcm
+  password: guXsVF5bET8TgJV0HYUYew==
+  plugin: shadow-tls
+  client-fingerprint: chrome
+  plugin-opts:
+    host: addons.mozilla.org
+    password: 1fba3104-360c-483f-9fc2-c90c85b55389
+    version: 3
+  smux:
+    enabled: true
+    protocol: h2mux
+    padding: true
+    max-connections: '8'
+    min-streams: '16'
+    statistic: true
+    only-tcp: false
+- name: meta_ss_12
+  type: ss
   server: 167.160.90.252
   port: 8883
   cipher: 2022-blake3-aes-128-gcm
@@ -275,6 +295,7 @@ proxy-groups:
   - meta_vless_01
   - meta_vless_02
   - meta_ss_11
+  - meta_ss_12
   - meta_vless_21
   - meta_vless_31
   - meta_vmess_41
@@ -294,6 +315,7 @@ proxy-groups:
   - meta_vless_01
   - meta_vless_02
   - meta_ss_11
+  - meta_ss_12
   - meta_vless_21
   - meta_vless_31
   - meta_vmess_41
@@ -313,6 +335,7 @@ proxy-groups:
   - meta_vless_01
   - meta_vless_02
   - meta_ss_11
+  - meta_ss_12
   - meta_vless_21
   - meta_vless_31
   - meta_vmess_41
