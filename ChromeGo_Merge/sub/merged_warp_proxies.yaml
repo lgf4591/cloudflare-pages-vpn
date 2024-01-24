@@ -160,7 +160,7 @@ proxies:
       host: xray1.freeh1.xyz
 - name: meta_vmess_51
   type: vmess
-  server: dongtaiwang3.com
+  server: dongtaiwang2.com
   port: 443
   cipher: auto
   uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
