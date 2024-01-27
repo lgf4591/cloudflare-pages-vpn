@@ -16,7 +16,7 @@ hysteria://108.181.22.239:39967?peer=bing.com&auth=dongtaiwang.com&insecure=1&up
 hysteria://167.160.91.115:41189?peer=www.amazon.cn&auth=bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF&insecure=1&upmbps=11&downmbps=55&alpn=h3&obfs=&protocol=udp&fastopen=1#hysteria_3
 hysteria2://dongtaiwang.com@62.210.101.0:52465?insecure=1&sni=www.bing.com#hysteria2_0
 hysteria2://dongtaiwang.com@64.110.25.11:33337?insecure=1&sni=www.bing.com#hysteria2_1
-hysteria2://dongtaiwang.com@64.110.25.11:33337?insecure=1&sni=www.bing.com#hysteria2_2
+hysteria2://dongtaiwang.com@62.210.103.0:52465?insecure=1&sni=www.bing.com#hysteria2_2
 hysteria2://dongtaiwang.com@108.181.24.77:18775?insecure=1&sni=www.bing.com#hysteria2_3
 vless://7b671cd2-233d-406c-88da-1c687727dc52@23.227.39.53:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=fr.freeh1.xyz&serviceName=&path=/kfhaws&host=fr.freeh1.xyz#vless_0
 vless://0773256c-d020-436d-afea-6eee7cb6c872@dongtaiwang2.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freegradely.xyz&serviceName=&path=/bodhws&host=xray1.freegradely.xyz#vless_1
