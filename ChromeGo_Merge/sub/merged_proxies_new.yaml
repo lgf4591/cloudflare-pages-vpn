@@ -33,114 +33,302 @@ proxies:
   udp: true
   sni: gw.alicdn.com
   skip-cert-verify: true
-- name: meta_vless_01
-  type: vless
-  server: 23.227.38.51
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
+- name: meta_ss_01
+  type: ss
+  server: uydyfkghjrtcsdx.youcansee.cyou
+  port: 20167
+  password: 81416f3c-5b00-4056-8e5f-d7ffdd884bf4
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_02
+  type: ss
+  server: service.ouluyun9803.com
+  port: 26601
+  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_03
+  type: ss
+  server: service.ouluyun9803.com
+  port: 26668
+  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  cipher: chacha20-ietf-poly1305
+- name: meta_vmess_04
+  type: vmess
+  server: 149.56.7.123
+  port: 27490
+  cipher: auto
+  uuid: 3722f77b-21b0-4892-b9f7-79c33b76e733
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /kfhaws
+    path: /
     headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: meta_vless_02
-  type: vless
-  server: 23.227.39.51
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
+      host: jkgd.sbs
+- name: meta_vmess_05
+  type: vmess
+  server: 94.131.97.123
+  port: 80
+  cipher: auto
+  uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /kfhaws
+    path: /vmess
     headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: meta_vless_11
-  type: vless
-  server: 172.67.70.101
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
+      host: cz1-vmess.sshmax.xyz
+- name: meta_vmess_06
+  type: vmess
+  server: be1-vmess.sshmax.xyz
+  port: 80
+  cipher: auto
+  uuid: 38df59ec-30e2-45e9-86c7-5a58667e6994
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /kfhaws
-    headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: meta_vless_12
-  type: vless
-  server: 172.67.70.103
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
+    path: /vmess
+- name: meta_vmess_07
+  type: vmess
+  server: 104.17.25.1
+  port: 80
+  cipher: auto
+  uuid: 3d668cbe-5464-4a79-aab5-e301b4e0f169
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /kfhaws
+    path: /
     headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
-- name: meta_vless_21
-  type: vless
-  server: 198.41.220.101
-  port: 443
-  uuid: ffb15cd2-0521-49de-b8aa-fb15d58c8075
-  tls: true
-  servername: v2ray3.freegradely.xyz
+      host: dg.catnipballs.gay
+- name: meta_vmess_08
+  type: vmess
+  server: pt2-vmess.sshmax.xyz
+  port: 80
+  cipher: auto
+  uuid: 099b5b7a-9d71-43cd-80e3-b8fbe1cc2695
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /bqbows
-    headers:
-      host: v2ray3.freegradely.xyz
-  client-fingerprint: chrome
-- name: meta_vless_31
-  type: vless
-  server: 23.227.39.53
-  port: 443
-  uuid: 7b671cd2-233d-406c-88da-1c687727dc52
-  tls: true
-  servername: fr.freeh1.xyz
+    path: /vmess
+- name: meta_vmess_09
+  type: vmess
+  server: 94.131.8.32
+  port: 80
+  cipher: auto
+  uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /kfhaws
+    path: /vmess
+- name: meta_vmess_010
+  type: vmess
+  server: 104.17.25.1
+  port: 80
+  cipher: auto
+  uuid: aa8edc9c-978a-4f09-906f-a2668751e935
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
     headers:
-      host: fr.freeh1.xyz
-  client-fingerprint: chrome
+      host: usnatvpn.catnipballs.gay
+- name: meta_vmess_011
+  type: vmess
+  server: 3SAO.5GTOCDOCAO.COM
+  port: 80
+  cipher: auto
+  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5gtocdocao.com
+    headers:
+      host: 3SAO.5GTOCDOCAO.COM
+- name: meta_vmess_012
+  type: vmess
+  server: 5.252.23.173
+  port: 80
+  cipher: auto
+  uuid: d70a32b5-5d4b-4ebe-adf6-8f34c73871d2
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+- name: meta_vmess_013
+  type: vmess
+  server: 36.232.161.39
+  port: 6122
+  cipher: auto
+  uuid: f4595480-44d4-4d55-a37e-a5b1e0ec64d6
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: meta_vmess_014
+  type: vmess
+  server: 94.131.10.135
+  port: 80
+  cipher: auto
+  uuid: 099b5b7a-9d71-43cd-80e3-b8fbe1cc2695
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+- name: meta_vmess_015
+  type: vmess
+  server: vn18.4gchill.com
+  port: 80
+  cipher: auto
+  uuid: 67d5296e-a2ee-4a9f-89e6-365da540c55d
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4gchill.com
+    headers:
+      host: vn18.4gchill.com
+- name: meta_vmess_016
+  type: vmess
+  server: cfcdn2.sanfencdn9.com
+  port: 2052
+  cipher: auto
+  uuid: 657140e4-fb53-4404-80b7-fcbac652671f
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/34kKXbLM
+    headers:
+      host: yvhnbevxhk1.yofnhkfc.xyz
+- name: meta_vmess_017
+  type: vmess
+  server: nb22.ntbq.dynu.net
+  port: 12002
+  cipher: auto
+  uuid: 99e39047-9298-404e-b632-1867f7ed1b37
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: meta_vmess_018
+  type: vmess
+  server: c12.twtc.dynu.net
+  port: 6122
+  cipher: auto
+  uuid: f4595480-44d4-4d55-a37e-a5b1e0ec64d6
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: meta_vmess_019
+  type: vmess
+  server: data-us-v1.shwjfkw.cn
+  port: 20401
+  cipher: auto
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /debian
+    headers:
+      host: data-us-v1.shwjfkw.cn
+- name: meta_vmess_020
+  type: vmess
+  server: cz1-vmess.sshmax.xyz
+  port: 80
+  cipher: auto
+  uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+- name: meta_vmess_021
+  type: vmess
+  server: 104.17.25.2
+  port: 80
+  cipher: auto
+  uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: sgvpn.catnipballs.gay
+- name: meta_vmess_11
+  type: vmess
+  server: 108.181.2.154
+  port: 33445
+  cipher: auto
+  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: meta_vmess_21
+  type: vmess
+  server: 108.181.2.154
+  port: 33445
+  cipher: auto
+  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: meta_vmess_31
+  type: vmess
+  server: 108.181.2.154
+  port: 33445
+  cipher: auto
+  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 - name: meta_vmess_41
   type: vmess
-  server: 198.41.221.100
-  port: 443
+  server: 108.181.2.154
+  port: 33445
   cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
   alterId: 0
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /gzogws
-    headers:
-      host: xray1.freeh1.xyz
+  network: tcp
 - name: meta_vmess_51
   type: vmess
-  server: 23.227.38.121
-  port: 443
+  server: 108.181.2.154
+  port: 33445
   cipher: auto
-  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
   alterId: 0
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /gzogws
-    headers:
-      host: xray1.freeh1.xyz
+  network: tcp
 - name: meta_hysteria_61
   type: hysteria
   server: www2.dtku48.xyz
@@ -155,7 +343,7 @@ proxies:
 - name: meta_hysteria_71
   type: hysteria
   server: www.dtku50.xyz
-  port: 32408
+  port: 18470
   sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
@@ -244,12 +432,30 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - 油管-绵阿羊
-  - meta_vless_01
-  - meta_vless_02
-  - meta_vless_11
-  - meta_vless_12
-  - meta_vless_21
-  - meta_vless_31
+  - meta_ss_01
+  - meta_ss_02
+  - meta_ss_03
+  - meta_vmess_04
+  - meta_vmess_05
+  - meta_vmess_06
+  - meta_vmess_07
+  - meta_vmess_08
+  - meta_vmess_09
+  - meta_vmess_010
+  - meta_vmess_011
+  - meta_vmess_012
+  - meta_vmess_013
+  - meta_vmess_014
+  - meta_vmess_015
+  - meta_vmess_016
+  - meta_vmess_017
+  - meta_vmess_018
+  - meta_vmess_019
+  - meta_vmess_020
+  - meta_vmess_021
+  - meta_vmess_11
+  - meta_vmess_21
+  - meta_vmess_31
   - meta_vmess_41
   - meta_vmess_51
   - meta_hysteria_61
@@ -267,12 +473,30 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 油管-绵阿羊
-  - meta_vless_01
-  - meta_vless_02
-  - meta_vless_11
-  - meta_vless_12
-  - meta_vless_21
-  - meta_vless_31
+  - meta_ss_01
+  - meta_ss_02
+  - meta_ss_03
+  - meta_vmess_04
+  - meta_vmess_05
+  - meta_vmess_06
+  - meta_vmess_07
+  - meta_vmess_08
+  - meta_vmess_09
+  - meta_vmess_010
+  - meta_vmess_011
+  - meta_vmess_012
+  - meta_vmess_013
+  - meta_vmess_014
+  - meta_vmess_015
+  - meta_vmess_016
+  - meta_vmess_017
+  - meta_vmess_018
+  - meta_vmess_019
+  - meta_vmess_020
+  - meta_vmess_021
+  - meta_vmess_11
+  - meta_vmess_21
+  - meta_vmess_31
   - meta_vmess_41
   - meta_vmess_51
   - meta_hysteria_61
