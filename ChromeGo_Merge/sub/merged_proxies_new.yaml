@@ -35,6 +35,20 @@ proxies:
   skip-cert-verify: true
 - name: meta_vless_01
   type: vless
+  server: 51.159.103.141
+  port: 12207
+  udp: true
+  uuid: 63925418-7ae3-4da1-9e73-fb3fc5af6fdb
+  tls: true
+  servername: s0.awsstatic.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: meta_vless_02
+  type: vless
   server: 109.104.152.4
   port: 16414
   udp: true
@@ -47,7 +61,7 @@ proxies:
     public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: meta_vless_02
+- name: meta_vless_03
   type: vless
   server: 108.181.5.130
   port: 17346
@@ -61,16 +75,20 @@ proxies:
     public-key: O5x9mSGdETFh_ql4m_2dPEUNBVwCly9XSi9pu1teLls
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: meta_vmess_11
-  type: vmess
-  server: 108.181.2.154
-  port: 33445
-  cipher: auto
-  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
+- name: meta_vless_11
+  type: vless
+  server: 51.159.103.141
+  port: 12207
+  udp: true
+  uuid: 63925418-7ae3-4da1-9e73-fb3fc5af6fdb
+  tls: true
+  servername: s0.awsstatic.com
+  flow: xtls-rprx-vision
   network: tcp
+  reality-opts:
+    public-key: A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: meta_vmess_21
   type: vmess
   server: 108.181.2.154
@@ -219,7 +237,8 @@ proxy-groups:
   - 油管-绵阿羊
   - meta_vless_01
   - meta_vless_02
-  - meta_vmess_11
+  - meta_vless_03
+  - meta_vless_11
   - meta_vmess_21
   - meta_vmess_31
   - meta_vmess_41
@@ -241,7 +260,8 @@ proxy-groups:
   - 油管-绵阿羊
   - meta_vless_01
   - meta_vless_02
-  - meta_vmess_11
+  - meta_vless_03
+  - meta_vless_11
   - meta_vmess_21
   - meta_vmess_31
   - meta_vmess_41
