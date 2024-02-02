@@ -228,6 +228,20 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: reality_1
+  type: vless
+  server: 109.104.152.4
+  port: 16414
+  uuid: 80b5b4de-0619-4ac2-b1ff-f2bcc697b641
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: mensura.cdn-apple.com
+  reality-opts:
+    public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
+    short-id: 6ba85179e30d4fc2
 proxy-groups:
 - name: 节点选择
   type: select
@@ -251,6 +265,7 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - reality_1
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -274,6 +289,7 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - reality_1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

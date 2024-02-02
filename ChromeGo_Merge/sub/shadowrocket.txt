@@ -16,3 +16,4 @@ hysteria2://dongtaiwang.com@62.210.101.0:52465?insecure=1&sni=www.bing.com#hyste
 hysteria2://dongtaiwang.com@64.110.25.11:33337?insecure=1&sni=www.bing.com#hysteria2_1
 hysteria2://dongtaiwang.com@62.210.103.0:52465?insecure=1&sni=www.bing.com#hysteria2_2
 hysteria2://dongtaiwang.com@108.181.24.77:43656?insecure=1&sni=www.bing.com#hysteria2_3
+vless://80b5b4de-0619-4ac2-b1ff-f2bcc697b641@109.104.152.4:16414?security=reality&allowInsecure=0&flow=xtls-rprx-vision&type=tcp&fp=chrome&pbk=QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE&sid=6ba85179e30d4fc2&sni=mensura.cdn-apple.com&serviceName=&path=&host=#vless_1
