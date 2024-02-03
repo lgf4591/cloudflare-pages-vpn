@@ -93,20 +93,14 @@ proxies:
     public-key: abc-YDOgV8WkuXRT9bJH-N_E6LaLJ9_7Sfc5OGajaSU
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: meta_vless_11
-  type: vless
-  server: 51.159.103.141
-  port: 12207
-  udp: true
-  uuid: 63925418-7ae3-4da1-9e73-fb3fc5af6fdb
-  tls: true
-  servername: s0.awsstatic.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+- name: meta_ssr_11
+  type: ssr
+  server: 62.210.103.14
+  port: 33333
+  password: dongtaiwang.com
+  cipher: dummy
+  obfs: plain
+  protocol: auth_chain_a
 - name: meta_ssr_21
   type: ssr
   server: 108.181.2.157
@@ -115,17 +109,17 @@ proxies:
   cipher: dummy
   obfs: plain
   protocol: auth_chain_a
-- name: meta_vmess_31
-  type: vmess
-  server: 108.181.5.18
-  port: 18657
-  cipher: auto
-  uuid: 636ba072-493e-4235-b7a8-822bd4e340d5
-  alterId: 0
-  tls: false
+- name: meta_hysteria_31
+  type: hysteria
+  server: 108.181.5.20
+  port: 22881
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  servername: ''
-  network: tcp
 - name: meta_vless_41
   type: vless
   server: 108.181.2.156
@@ -140,17 +134,17 @@ proxies:
     public-key: TETJrb4V6VlHpITM8jXZjFsh1bUav4iPuSVDMjUBVyo
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: meta_vmess_51
-  type: vmess
-  server: 108.181.5.18
-  port: 18657
-  cipher: auto
-  uuid: 636ba072-493e-4235-b7a8-822bd4e340d5
-  alterId: 0
-  tls: false
+- name: meta_hysteria_51
+  type: hysteria
+  server: 108.181.5.20
+  port: 22881
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  servername: ''
-  network: tcp
 - name: meta_hysteria_61
   type: hysteria
   server: www2.dtku48.xyz
@@ -247,20 +241,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: reality_0
-  type: vless
-  server: 108.181.22.213
-  port: 28945
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: m.media-amazon.com
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
 - name: reality_1
   type: vless
   server: 109.104.152.4
@@ -274,6 +254,20 @@ proxies:
   servername: mensura.cdn-apple.com
   reality-opts:
     public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
+    short-id: 6ba85179e30d4fc2
+- name: reality_3
+  type: vless
+  server: 108.181.22.213
+  port: 28945
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: m.media-amazon.com
+  reality-opts:
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
     short-id: 6ba85179e30d4fc2
 proxy-groups:
 - name: 节点选择
@@ -301,11 +295,11 @@ proxy-groups:
   - meta_vless_01
   - meta_vless_02
   - meta_vless_03
-  - meta_vless_11
+  - meta_ssr_11
   - meta_ssr_21
-  - meta_vmess_31
+  - meta_hysteria_31
   - meta_vless_41
-  - meta_vmess_51
+  - meta_hysteria_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
@@ -314,8 +308,8 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_0
   - reality_1
+  - reality_3
 - name: 手动选择
   type: select
   proxies:
@@ -323,11 +317,11 @@ proxy-groups:
   - meta_vless_01
   - meta_vless_02
   - meta_vless_03
-  - meta_vless_11
+  - meta_ssr_11
   - meta_ssr_21
-  - meta_vmess_31
+  - meta_hysteria_31
   - meta_vless_41
-  - meta_vmess_51
+  - meta_hysteria_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
@@ -336,8 +330,8 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_0
   - reality_1
+  - reality_3
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -345,11 +339,11 @@ proxy-groups:
   - meta_vless_01
   - meta_vless_02
   - meta_vless_03
-  - meta_vless_11
+  - meta_ssr_11
   - meta_ssr_21
-  - meta_vmess_31
+  - meta_hysteria_31
   - meta_vless_41
-  - meta_vmess_51
+  - meta_hysteria_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
@@ -358,8 +352,8 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_0
   - reality_1
+  - reality_3
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
