@@ -89,21 +89,14 @@ proxies:
     public-key: A-DHKUq8W8KZKM1gr8xcKCoqKSct73NtdSjUZMhFcEM
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: meta_vmess_21
-  type: vmess
-  server: 23.227.39.52
-  port: 8080
-  cipher: auto
-  uuid: 87ed7bbb-7ecb-435c-975b-cd55a760bcb5
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /H76zeQJw/
-    headers:
-      host: 0.freegradely.xyz
+- name: meta_ssr_21
+  type: ssr
+  server: 108.181.2.157
+  port: 22222
+  password: dongtaiwang.com
+  cipher: dummy
+  obfs: plain
+  protocol: auth_chain_a
 - name: meta_vmess_31
   type: vmess
   server: 108.181.5.18
@@ -115,21 +108,20 @@ proxies:
   skip-cert-verify: true
   servername: ''
   network: tcp
-- name: meta_vmess_41
-  type: vmess
-  server: 23.227.39.52
-  port: 8080
-  cipher: auto
-  uuid: 87ed7bbb-7ecb-435c-975b-cd55a760bcb5
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /H76zeQJw/
-    headers:
-      host: 0.freegradely.xyz
+- name: meta_vless_41
+  type: vless
+  server: 108.181.2.156
+  port: 19695
+  udp: true
+  uuid: 906d367a-a5d2-467c-b476-a29c79215003
+  tls: true
+  servername: lol.secure.dyn.riotcdn.net
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: TETJrb4V6VlHpITM8jXZjFsh1bUav4iPuSVDMjUBVyo
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: meta_vmess_51
   type: vmess
   server: 108.181.5.18
@@ -237,6 +229,20 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: reality_0
+  type: vless
+  server: 108.181.22.213
+  port: 28945
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: m.media-amazon.com
+  reality-opts:
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
 - name: reality_1
   type: vless
   server: 109.104.152.4
@@ -262,9 +268,9 @@ proxy-groups:
   - meta_vless_02
   - meta_vless_03
   - meta_vless_11
-  - meta_vmess_21
+  - meta_ssr_21
   - meta_vmess_31
-  - meta_vmess_41
+  - meta_vless_41
   - meta_vmess_51
   - meta_hysteria_61
   - meta_hysteria_71
@@ -274,6 +280,7 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - reality_0
   - reality_1
 - name: 自动选择
   type: url-test
@@ -286,9 +293,9 @@ proxy-groups:
   - meta_vless_02
   - meta_vless_03
   - meta_vless_11
-  - meta_vmess_21
+  - meta_ssr_21
   - meta_vmess_31
-  - meta_vmess_41
+  - meta_vless_41
   - meta_vmess_51
   - meta_hysteria_61
   - meta_hysteria_71
@@ -298,6 +305,7 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - reality_0
   - reality_1
 rules:
 - DOMAIN,clash.razord.top,DIRECT
