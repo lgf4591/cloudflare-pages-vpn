@@ -141,16 +141,17 @@ proxies:
   password: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
-- name: meta_hysteria2_91
-  type: hysteria2
-  server: 45.150.165.84
-  port: 8881
-  password: d017e316-82cb-441c-8eea-7b5e9de64a20
-  obfs: salamander
-  obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20
+- name: meta_hysteria_91
+  type: hysteria
+  server: www2.dtku48.xyz
+  port: 22334
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
   skip-cert-verify: true
-  up: 2 Mbps
-  down: 10 Mbps
 - name: hysteria_0
   type: hysteria
   server: 51.158.54.46
@@ -251,7 +252,7 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
-  - meta_hysteria2_91
+  - meta_hysteria_91
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -274,7 +275,7 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
-  - meta_hysteria2_91
+  - meta_hysteria_91
   - hysteria_0
   - hysteria_1
   - hysteria_2
