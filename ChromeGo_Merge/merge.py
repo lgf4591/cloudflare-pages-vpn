@@ -4,6 +4,9 @@ import urllib.request
 import yaml
 import codecs
 import logging
+import geoip2.database
+import socket
+import re
 
 # 提取节点
 def process_urls(url_file, processor):
@@ -20,6 +23,23 @@ def process_urls(url_file, processor):
                 logging.error(f"Error processing URL {url}: {e}")
     except Exception as e:
         logging.error(f"Error reading file {url_file}: {e}")
+def get_physical_location(address):
+    address = re.sub(':.*', '', address)  # 用正则表达式去除端口部分
+    try:
+        ip_address = socket.gethostbyname(address)
+    except socket.gaierror:
+        ip_address = address
+
+    try:
+        reader = geoip2.database.Reader('GeoLite2-City.mmdb')  # 这里的路径需要指向你自己的数据库文件
+        response = reader.city(ip_address)
+        country = response.country.name
+        city = response.city.name
+        #return f"{country}_{city}"
+        return f"{country}"
+    except geoip2.errors.AddressNotFoundError as e:
+        print(f"Error: {e}")
+        return "Unknown"
 #提取clash节点
 def process_clash(data, index):
             # 解析YAML格式的内容
@@ -54,7 +74,9 @@ def process_clash(data, index):
                         security = 'reality'
                     else:
                         security = 'tls'
-                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure{insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#vless_meta_{index}"
+                    location = get_physical_location(server)
+                    name = f"{location}_vless_{index}"
+                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure{insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#{name}"
 
                     merged_proxies.append(vless_meta)
 
@@ -73,8 +95,9 @@ def process_clash(data, index):
                     sni = proxy.get("servername", "")
                     ws_path = proxy.get('ws-opts', {}).get('path', '')
                     ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
-
-                    vmess_meta =  f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure{insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#vmess_meta_{index}"
+                    location = get_physical_location(server)
+                    name = f"{location}_vmess_{index}"
+                    vmess_meta =  f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure{insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#{name}"
 
                     merged_proxies.append(vmess_meta)
 
@@ -88,8 +111,10 @@ def process_clash(data, index):
                     udp_relay_mode = proxy.get("udp-relay-mode", "naive")
                     congestion = proxy.get("congestion-controller", "bbr")
                     alpn = proxy.get("alpn", [])[0] if proxy.get("alpn") and len(proxy["alpn"]) > 0 else None
+                    location = get_physical_location(server)
+                    name = f"{location}_tuic_{index}"
                     #tuic_meta_neko = f"tuic://{server}:{port}?uuid={uuid}&version=5&password={password}&insecure={insecure}&alpn={alpn}&mode={udp_relay_mode}"
-                    tuic_meta = f"tuic://{uuid}:{password}@{server}:{port}?sni={sni}&congestion_control={congestion}&udp_relay_mode={udp_relay_mode}&alpn={alpn}&allow_insecure={insecure}"
+                    tuic_meta = f"tuic://{uuid}:{password}@{server}:{port}?sni={sni}&congestion_control={congestion}&udp_relay_mode={udp_relay_mode}&alpn={alpn}&allow_insecure={insecure}#{name}"
                     merged_proxies.append(tuic_meta)
 
                 elif proxy['type'] == "hysteria2":
@@ -100,7 +125,9 @@ def process_clash(data, index):
                     obfs_password = proxy.get("obfs-password","")
                     sni = proxy.get("sni", "")
                     insecure = int(proxy.get("skip-cert-verify", 0))
-                    hy2_meta = f"hysteria2://{auth}@{server}:{port}?insecure={insecure}&sni={sni}&obfs={obfs}&obfs-password={obfs_password}#hysteria2_meta_{index}"
+                    location = get_physical_location(server)
+                    name = f"{location}_hy2_{index}"
+                    hy2_meta = f"hysteria2://{auth}@{server}:{port}?insecure={insecure}&sni={sni}&obfs={obfs}&obfs-password={obfs_password}#{name}"
                     merged_proxies.append(hy2_meta)
 
                 elif proxy['type'] == 'hysteria':
@@ -117,7 +144,9 @@ def process_clash(data, index):
                     fast_open = int(proxy.get("fast_open", 1))
                     auth = proxy.get("auth-str", "")
                     # 生成URL
-                    hysteria_meta = f"hysteria://{server}:{port}?peer={sni}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&mport={ports}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}#hysteria_meta_{index}"
+                    location = get_physical_location(server)
+                    name = f"{location}_hy_{index}"
+                    hysteria_meta = f"hysteria://{server}:{port}?peer={sni}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&mport={ports}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}#{name}"
                     merged_proxies.append(hysteria_meta)
 
                 elif proxy['type'] == 'ssr':
@@ -134,12 +163,11 @@ def process_clash(data, index):
                     obfs_param = base64.b64encode(obfs_param.encode()).decode()
                     # 生成URL
                     ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks=ssr_meta_{index}&protoparam{protocol_param}=&obfsparam={obfs_param}"
-                    
                     ssr_source=base64.b64encode(ssr_source.encode()).decode()
                     ssr_meta = f"ssr://{ssr_source}"
                     merged_proxies.append(ssr_meta)
                 #目前仅支持最原始版本ss，无插件支持
-                elif proxy['type'] == 'ss':
+                elif proxy['type'] == 'sstest':
                     server = proxy.get("server", "")
                     port = int(proxy.get("port", 443))
                     password = proxy.get("password", "")
@@ -200,7 +228,9 @@ def process_hysteria(data, index):
         fast_open = int(json_data.get("fast_open", 0))
         auth = json_data.get("auth_str", "")
         # 生成URL
-        hysteria = f"hysteria://{server}?peer={server_name}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}#hysteria_{index}"
+        location = get_physical_location(server)
+        name = f"{location}_hysteria_{index}"
+        hysteria = f"hysteria://{server}?peer={server_name}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}#{name}"
         merged_proxies.append(hysteria)
 
 
@@ -217,7 +247,9 @@ def process_hysteria2(data, index):
         sni = json_data["tls"]["sni"]
         auth = json_data["auth"]
         # 生成URL
-        hysteria2 = f"hysteria2://{auth}@{server}?insecure={insecure}&sni={sni}#hysteria2_{index}"
+        location = get_physical_location(server)
+        name = f"{location}_hysteria2_{index}"
+        hysteria2 = f"hysteria2://{auth}@{server}?insecure={insecure}&sni={sni}#{name}"
 
         merged_proxies.append(hysteria2)
     except Exception as e:
@@ -266,8 +298,9 @@ def process_xray(data, index):
             ws_settings = stream_settings.get("wsSettings", {})
             ws_path = ws_settings.get("path", "")
             ws_headers_host = ws_settings.get("headers", {}).get("Host", "")
-
-            xray_proxy = f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#vless_{index}"
+            location = get_physical_location(server)
+            name = f"{location}_vless_{index}"
+            xray_proxy = f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#{name}"
 
             # 将当前proxy字典添加到所有proxies列表中
             merged_proxies.append(xray_proxy)
@@ -291,10 +324,10 @@ def process_xray(data, index):
 merged_proxies = []
 
 # 处理 clash URLs
-process_urls('./urls/clash_new_urls.txt', process_clash)
+process_urls('./urls/clash_urls.txt', process_clash)
 
 # 处理 shadowtls URLs
-process_urls('./urls/sb_urls.txt', process_sb)
+#process_urls('./urls/sb_urls.txt', process_sb)
 
 # 处理 naive URLs
 process_urls('./urls/naiverproxy_urls.txt', process_naive)
@@ -309,22 +342,15 @@ process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
 process_urls('./urls/xray_urls.txt', process_xray)
 
 # 将结果写入文件
-try:
-    with open("./sub/shadowrocket.txt", "w") as file:
-        for proxy in merged_proxies:
-            file.write(proxy + "\n")
-except Exception as e:
-    print(f"Error writing to file: {e}")
+merged_content = "\n".join(merged_proxies)
 
 try:
-    with open("./sub/shadowrocket.txt", "r") as file:
-        content = file.read()
-        encoded_content = base64.b64encode(content.encode("utf-8")).decode("utf-8")
+    encoded_content = base64.b64encode(merged_content.encode("utf-8")).decode("utf-8")
     
     with open("./sub/shadowrocket_base64.txt", "w") as encoded_file:
         encoded_file.write(encoded_content)
         
-    print("Content successfully encoded and written to file.")
+    print("Content successfully encoded and written to shadowrocket_base64.txt.")
 except Exception as e:
-    print(f"Error encoding file content: {e}")
+    print(f"Error encoding and writing to file: {e}")
 

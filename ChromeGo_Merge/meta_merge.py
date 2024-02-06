@@ -2,7 +2,9 @@ import yaml
 import json
 import urllib.request
 import logging
-
+import geoip2.database
+import socket
+import re
 # 提取节点
 def process_urls(url_file, processor):
     try:
@@ -23,8 +25,28 @@ def process_clash(data, index):
     content = yaml.safe_load(data)
     proxies = content.get('proxies', [])
     for i, proxy in enumerate(proxies):
-        proxy['name'] = f"meta_{proxy['type']}_{index}{i+1}"
+        location = get_physical_location(proxy['server'])
+        proxy['name'] = f"{location}_{proxy['type']}_{index}{i+1}"
     merged_proxies.extend(proxies)
+
+def get_physical_location(address):
+    address = re.sub(':.*', '', address)  # 用正则表达式去除端口部分
+    try:
+        ip_address = socket.gethostbyname(address)
+    except socket.gaierror:
+        ip_address = address
+
+    try:
+        reader = geoip2.database.Reader('GeoLite2-City.mmdb')  # 这里的路径需要指向你自己的数据库文件
+        response = reader.city(ip_address)
+        country = response.country.name
+        city = response.city.name
+        #return f"{country}_{city}"
+        return f"油管绵阿羊_{country}"
+    except geoip2.errors.AddressNotFoundError as e:
+        print(f"Error: {e}")
+        return "Unknown"
+
 # 处理sb，待办
 def process_sb(data, index):
     try:
@@ -39,7 +61,8 @@ def process_sb(data, index):
         server_name = json_data["outbounds"][1]["tls"]["server_name"]
         shadowtls_password = json_data["outbounds"][1]["password"]
         version = json_data["outbounds"][1]["version"]
-        name = f"shadowtls_{index}"
+        location = get_physical_location(server)
+        name = f"{location}_shadowtls_{index}"
         # 创建当前网址的proxy字典
         proxy = {
             "name": name,
@@ -79,12 +102,14 @@ def process_hysteria(data, index):
             mport = ports_slt[1]
         else:
             mport = server_port
-        fast_open = json_data["fast_open"]
+        #fast_open = json_data["fast_open"]
+        fast_open = True
         insecure = json_data["insecure"]
         server_name = json_data["server_name"]
         alpn = json_data["alpn"]
         protocol = json_data["protocol"]
-        name = f"hysteria_{index}"
+        location = get_physical_location(server)
+        name = f"{location}_hy_{index}"
 
         # 创建当前网址的proxy字典
         proxy = {
@@ -121,10 +146,12 @@ def process_hysteria2(data, index):
         ports = server_ports_slt[1]
         ports_slt = ports.split(",")
         server_port = int(ports_slt[0])
-        fast_open = json_data["fastOpen"]
+        #fast_open = json_data["fastOpen"]
+        fast_open = True
         insecure = json_data["tls"]["insecure"]
         sni = json_data["tls"]["sni"]
-        name = f"hysteria2_{index}"
+        location = get_physical_location(server)
+        name = f"{location}_hy2_{index}"
 
         # 创建当前网址的proxy字典
         proxy = {
@@ -166,7 +193,8 @@ def process_xray(data, index):
             fingerprint = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["fingerprint"]
             # udp转发
             isudp = True
-            name = f"reality_{index}"
+            location = get_physical_location(server)
+            name = f"{location}_reality_{index}"
             
             # 根据network判断tcp
             if network == "tcp":
@@ -220,20 +248,27 @@ def process_xray(data, index):
 def update_proxy_groups(config_data, merged_proxies):
     for group in config_data['proxy-groups']:
         if group['name'] in ['自动选择', '节点选择']:
-            group['proxies'].extend(proxy['name'] for proxy in merged_proxies)
+            if 'proxies' not in group or not group['proxies']:
+                group['proxies'] = [proxy['name'] for proxy in merged_proxies]
+            else:
+                group['proxies'].extend(proxy['name'] for proxy in merged_proxies)
 
 def update_warp_proxy_groups(config_warp_data, merged_proxies):
     for group in config_warp_data['proxy-groups']:
         if group['name'] in ['自动选择', '手动选择', '负载均衡']:
-            group['proxies'].extend(proxy['name'] for proxy in merged_proxies)
-# 定义一个空列表用于存储合并后的代理配置
+            if 'proxies' not in group or not group['proxies']:
+                group['proxies'] = [proxy['name'] for proxy in merged_proxies]
+            else:
+                group['proxies'].extend(proxy['name'] for proxy in merged_proxies)
+
+# 包含hysteria2
 merged_proxies = []
 
 # 处理 clash URLs
-process_urls('./urls/clash_new_urls.txt', process_clash)
+process_urls('./urls/clash_urls.txt', process_clash)
 
 # 处理 shadowtls URLs
-process_urls('./urls/sb_urls.txt', process_sb)
+#process_urls('./urls/sb_urls.txt', process_sb)
 
 # 处理 hysteria URLs
 process_urls('./urls/hysteria_urls.txt', process_hysteria)
@@ -253,8 +288,16 @@ with open('./templates/clash_warp_template.yaml', 'r', encoding='utf-8') as file
     config_warp_data = yaml.safe_load(file)
 
 # 添加合并后的代理到proxies部分
-config_data['proxies'].extend(merged_proxies)
-config_warp_data['proxies'].extend(merged_proxies)
+if 'proxies' not in config_data or not config_data['proxies']:
+    config_data['proxies'] = merged_proxies
+else:
+    config_data['proxies'].extend(merged_proxies)
+
+if 'proxies' not in config_warp_data or not config_warp_data['proxies']:
+    config_warp_data['proxies'] = merged_proxies
+else:
+    config_warp_data['proxies'].extend(merged_proxies)
+
 
 # 更新自动选择和节点选择的proxies的name部分
 update_proxy_groups(config_data, merged_proxies)
@@ -269,45 +312,4 @@ with open('./sub/merged_warp_proxies_new.yaml', 'w', encoding='utf-8') as file:
 
 print("聚合完成")
 
-# 处理其他
-merged_proxies = []
 
-# 处理 clash URLs
-process_urls('./urls/clash_urls.txt', process_clash)
-
-# 处理 shadowtls URLs
-process_urls('./urls/sb_urls.txt', process_sb)
-
-# 处理 hysteria URLs
-process_urls('./urls/hysteria_urls.txt', process_hysteria)
-
-# 处理 hysteria2 URLs
-#process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
-
-# 处理 xray URLs
-process_urls('./urls/xray_urls.txt', process_xray)
-
-# 读取普通的配置文件内容
-with open('./templates/clash_template.yaml', 'r', encoding='utf-8') as file:
-    config_data = yaml.safe_load(file)
-
-# 读取warp配置文件内容
-with open('./templates/clash_warp_template.yaml', 'r', encoding='utf-8') as file:
-    config_warp_data = yaml.safe_load(file)
-
-# 添加合并后的代理到proxies部分
-config_data['proxies'].extend(merged_proxies)
-config_warp_data['proxies'].extend(merged_proxies)
-
-# 更新自动选择和节点选择的proxies的name部分
-update_proxy_groups(config_data, merged_proxies)
-update_warp_proxy_groups(config_warp_data, merged_proxies)
-
-# 将更新后的数据写入到一个YAML文件中，并指定编码格式为UTF-8
-with open('./sub/merged_proxies.yaml', 'w', encoding='utf-8') as file:
-    yaml.dump(config_data, file, sort_keys=False, allow_unicode=True)
-
-with open('./sub/merged_warp_proxies.yaml', 'w', encoding='utf-8') as file:
-    yaml.dump(config_warp_data, file, sort_keys=False, allow_unicode=True)
-
-print("聚合完成")

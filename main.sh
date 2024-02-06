@@ -19,6 +19,9 @@ pip install -r requirements.txt
 python meta_merge.py
 
 # print("Run shadowrocket merge script")
-python merge.py 
+python merge.py
+
+# print("Run sb script")
+python sb.py
 
 # print("finished!!!")
