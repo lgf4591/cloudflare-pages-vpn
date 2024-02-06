@@ -25,12 +25,12 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: 油管绵阿羊_France_tuic_01
+- name: 油管绵阿羊_United States_tuic_01
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 195.137.220.189
+  port: 33445
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
   password: dongtaiwang.com
   alpn:
   - h3
@@ -40,10 +40,10 @@ proxies:
   congestion-controller: bbr
 - name: 油管绵阿羊_United States_tuic_11
   type: tuic
-  server: 109.104.152.4
+  server: 74.63.249.229
   port: 443
   udp: true
-  uuid: 9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -51,12 +51,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_Netherlands_tuic_21
+- name: 油管绵阿羊_United States_tuic_21
   type: tuic
-  server: 109.104.153.17
-  port: 22334
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 364d2d85-5bfd-463f-a3dd-a08012a2a6ce
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -64,12 +64,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_France_tuic_31
+- name: 油管绵阿羊_United States_tuic_31
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -77,12 +77,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_France_tuic_41
+- name: 油管绵阿羊_United States_tuic_41
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -90,12 +90,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_France_tuic_51
+- name: 油管绵阿羊_United States_tuic_51
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -202,8 +202,8 @@ proxies:
   - h3
 - name: 油管绵阿羊_France_hy2_0
   type: hysteria2
-  server: 62.210.101.0
-  port: 52465
+  server: 62.210.103.0
+  port: 22483
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -219,7 +219,7 @@ proxies:
 - name: 油管绵阿羊_France_hy2_2
   type: hysteria2
   server: 62.210.103.0
-  port: 52465
+  port: 22483
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -232,6 +232,20 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: 油管绵阿羊_France_reality_0
+  type: vless
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: update.microsoft
+  reality-opts:
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
+    short-id: 6ba85179e30d4fc2
 - name: 油管绵阿羊_United States_reality_1
   type: vless
   server: 108.181.22.213
@@ -245,6 +259,20 @@ proxies:
   servername: m.media-amazon.com
   reality-opts:
     public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
+- name: 油管绵阿羊_France_reality_2
+  type: vless
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: update.microsoft
+  reality-opts:
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
     short-id: 6ba85179e30d4fc2
 - name: 油管绵阿羊_United States_reality_3
   type: vless
@@ -266,12 +294,12 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - 油管绵阿羊_France_tuic_01
+  - 油管绵阿羊_United States_tuic_01
   - 油管绵阿羊_United States_tuic_11
-  - 油管绵阿羊_Netherlands_tuic_21
-  - 油管绵阿羊_France_tuic_31
-  - 油管绵阿羊_France_tuic_41
-  - 油管绵阿羊_France_tuic_51
+  - 油管绵阿羊_United States_tuic_21
+  - 油管绵阿羊_United States_tuic_31
+  - 油管绵阿羊_United States_tuic_41
+  - 油管绵阿羊_United States_tuic_51
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
   - 油管绵阿羊_Taiwan_hysteria_81
@@ -284,7 +312,9 @@ proxy-groups:
   - 油管绵阿羊_United States_hy2_1
   - 油管绵阿羊_France_hy2_2
   - 油管绵阿羊_United States_hy2_3
+  - 油管绵阿羊_France_reality_0
   - 油管绵阿羊_United States_reality_1
+  - 油管绵阿羊_France_reality_2
   - 油管绵阿羊_United States_reality_3
 - name: 自动选择
   type: url-test
@@ -292,12 +322,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_France_tuic_01
+  - 油管绵阿羊_United States_tuic_01
   - 油管绵阿羊_United States_tuic_11
-  - 油管绵阿羊_Netherlands_tuic_21
-  - 油管绵阿羊_France_tuic_31
-  - 油管绵阿羊_France_tuic_41
-  - 油管绵阿羊_France_tuic_51
+  - 油管绵阿羊_United States_tuic_21
+  - 油管绵阿羊_United States_tuic_31
+  - 油管绵阿羊_United States_tuic_41
+  - 油管绵阿羊_United States_tuic_51
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
   - 油管绵阿羊_Taiwan_hysteria_81
@@ -310,7 +340,9 @@ proxy-groups:
   - 油管绵阿羊_United States_hy2_1
   - 油管绵阿羊_France_hy2_2
   - 油管绵阿羊_United States_hy2_3
+  - 油管绵阿羊_France_reality_0
   - 油管绵阿羊_United States_reality_1
+  - 油管绵阿羊_France_reality_2
   - 油管绵阿羊_United States_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
