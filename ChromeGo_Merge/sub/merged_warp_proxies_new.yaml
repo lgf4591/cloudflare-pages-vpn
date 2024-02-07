@@ -69,10 +69,10 @@ proxies:
   congestion-controller: bbr
 - name: 油管绵阿羊_United States_tuic_21
   type: tuic
-  server: 74.63.249.229
-  port: 443
+  server: 108.181.2.158
+  port: 33440
   udp: true
-  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
+  uuid: 996c2970-ec1c-4659-9c5f-b3609c42a764
   password: dongtaiwang.com
   alpn:
   - h3
