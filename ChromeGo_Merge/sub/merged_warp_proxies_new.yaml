@@ -41,26 +41,12 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: 油管绵阿羊_France_hysteria_01
-  type: hysteria
-  server: 51.159.103.141
-  port: 18044
-  10000-13000: null
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-  hop_interval: 190
-- name: 油管绵阿羊_United States_tuic_11
+- name: 油管绵阿羊_United States_tuic_01
   type: tuic
-  server: 74.63.249.229
-  port: 443
+  server: 109.104.152.212
+  port: 33440
   udp: true
-  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
+  uuid: 41b29997-f495-4957-845c-a3f0d421d9e0
   password: dongtaiwang.com
   alpn:
   - h3
@@ -68,9 +54,9 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_Taiwan_tuic_21
+- name: 油管绵阿羊_Taiwan_tuic_11
   type: tuic
-  server: 1.162.136.33
+  server: 111.243.69.34
   port: 33098
   udp: true
   uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
@@ -81,27 +67,12 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_Hong Kong_vless_31
-  type: vless
-  server: 92.118.205.66
-  port: 10081
-  udp: true
-  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
-  tls: true
-  servername: images-na.ssl-images-amazon.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: 油管绵阿羊_United States_tuic_41
+- name: 油管绵阿羊_Taiwan_tuic_21
   type: tuic
-  server: 195.137.220.189
-  port: 33445
+  server: 111.243.69.34
+  port: 33098
   udp: true
-  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
   password: dongtaiwang.com
   alpn:
   - h3
@@ -109,21 +80,45 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_Hong Kong_vless_51
-  type: vless
-  server: 92.118.205.66
-  port: 10081
+- name: 油管绵阿羊_United States_tuic_31
+  type: tuic
+  server: 108.181.5.18
+  port: 22889
   udp: true
-  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
-  tls: true
-  servername: images-na.ssl-images-amazon.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 油管绵阿羊_United States_tuic_41
+  type: tuic
+  server: 108.181.5.18
+  port: 22889
+  udp: true
+  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 油管绵阿羊_United States_tuic_51
+  type: tuic
+  server: 108.181.5.18
+  port: 22889
+  udp: true
+  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: 油管绵阿羊_Taiwan_hysteria_61
   type: hysteria
   server: www2.dtku48.xyz
@@ -316,12 +311,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_France_hysteria_01
-  - 油管绵阿羊_United States_tuic_11
+  - 油管绵阿羊_United States_tuic_01
+  - 油管绵阿羊_Taiwan_tuic_11
   - 油管绵阿羊_Taiwan_tuic_21
-  - 油管绵阿羊_Hong Kong_vless_31
+  - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
-  - 油管绵阿羊_Hong Kong_vless_51
+  - 油管绵阿羊_United States_tuic_51
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
   - 油管绵阿羊_Taiwan_hysteria_81
@@ -340,12 +335,12 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - 油管绵阿羊_France_hysteria_01
-  - 油管绵阿羊_United States_tuic_11
+  - 油管绵阿羊_United States_tuic_01
+  - 油管绵阿羊_Taiwan_tuic_11
   - 油管绵阿羊_Taiwan_tuic_21
-  - 油管绵阿羊_Hong Kong_vless_31
+  - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
-  - 油管绵阿羊_Hong Kong_vless_51
+  - 油管绵阿羊_United States_tuic_51
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
   - 油管绵阿羊_Taiwan_hysteria_81
@@ -364,12 +359,12 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - 油管绵阿羊_France_hysteria_01
-  - 油管绵阿羊_United States_tuic_11
+  - 油管绵阿羊_United States_tuic_01
+  - 油管绵阿羊_Taiwan_tuic_11
   - 油管绵阿羊_Taiwan_tuic_21
-  - 油管绵阿羊_Hong Kong_vless_31
+  - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
-  - 油管绵阿羊_Hong Kong_vless_51
+  - 油管绵阿羊_United States_tuic_51
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
   - 油管绵阿羊_Taiwan_hysteria_81
