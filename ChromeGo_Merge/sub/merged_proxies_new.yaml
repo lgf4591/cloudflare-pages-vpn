@@ -25,7 +25,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: 油管绵阿羊_None_vless_01
+- name: 油管绵阿羊_Italy_vless_01
   type: vless
   server: cloudflare.cfgo.cc
   port: 2053
@@ -38,12 +38,12 @@ proxies:
     headers:
       host: 4.dtku43.xyz
   client-fingerprint: chrome
-- name: 油管绵阿羊_United States_tuic_11
+- name: 油管绵阿羊_Taiwan_tuic_11
   type: tuic
-  server: 109.104.152.161
-  port: 44550
+  server: 1.162.156.206
+  port: 33098
   udp: true
-  uuid: 0c008b79-86e6-403d-b684-8ba559562c9e
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
   password: dongtaiwang.com
   alpn:
   - h3
@@ -280,8 +280,8 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - 油管绵阿羊_None_vless_01
-  - 油管绵阿羊_United States_tuic_11
+  - 油管绵阿羊_Italy_vless_01
+  - 油管绵阿羊_Taiwan_tuic_11
   - 油管绵阿羊_Canada_vless_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
@@ -307,8 +307,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_None_vless_01
-  - 油管绵阿羊_United States_tuic_11
+  - 油管绵阿羊_Italy_vless_01
+  - 油管绵阿羊_Taiwan_tuic_11
   - 油管绵阿羊_Canada_vless_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
