@@ -25,10 +25,10 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: 油管绵阿羊_China_ss_01
+- name: 油管绵阿羊_United States_ss_01
   type: ss
-  server: lg3.dtku41.xyz
-  port: 44672
+  server: 109.104.152.144
+  port: 111
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
 - name: 油管绵阿羊_China_ss_02
@@ -91,7 +91,13 @@ proxies:
   port: 32143
   password: 432fe02f-b649-4bdc-91d8-f91ae87002f7
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_China_vmess_11
+- name: 油管绵阿羊_Taiwan_ss_11
+  type: ss
+  server: www.dtku40.xyz
+  port: 22222
+  password: dongtaiwang.com
+  cipher: chacha20-ietf-poly1305
+- name: 油管绵阿羊_China_vmess_12
   type: vmess
   server: data-us-v1.shwjfkw.cn
   port: 20401
@@ -106,13 +112,13 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: 油管绵阿羊_China_ss_12
+- name: 油管绵阿羊_China_ss_13
   type: ss
   server: service.ouluyun9803.com
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_None_vmess_13
+- name: 油管绵阿羊_None_vmess_14
   type: vmess
   server: 104.21.82.183
   port: 8880
@@ -127,13 +133,13 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: 油管绵阿羊_China_ss_14
+- name: 油管绵阿羊_China_ss_15
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_United States_vmess_15
+- name: 油管绵阿羊_United States_vmess_16
   type: vmess
   server: 172.67.221.183
   port: 8080
@@ -148,7 +154,7 @@ proxies:
     path: /
     headers:
       host: www.blueberrywindow.online
-- name: 油管绵阿羊_None_vmess_16
+- name: 油管绵阿羊_None_vmess_17
   type: vmess
   server: 104.21.82.183
   port: 8880
@@ -163,31 +169,31 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: 油管绵阿羊_China_ss_17
+- name: 油管绵阿羊_China_ss_18
   type: ss
   server: foshan.chiguayun.shop
   port: 27105
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_China_ss_18
+- name: 油管绵阿羊_China_ss_19
   type: ss
   server: foshan.chiguayun.shop
   port: 27108
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_China_ss_19
+- name: 油管绵阿羊_China_ss_110
   type: ss
   server: yd.qianggewangluo.buzz
   port: 10808
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_China_ss_110
+- name: 油管绵阿羊_China_ss_111
   type: ss
   server: foshan.chiguayun.shop
   port: 27104
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_China_ss_111
+- name: 油管绵阿羊_China_ss_112
   type: ss
   server: foshan.chiguayun.shop
   port: 27102
@@ -1873,17 +1879,16 @@ proxies:
   password: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
-- name: 油管绵阿羊_Taiwan_hysteria_81
-  type: hysteria
-  server: www2.dtku48.xyz
-  port: 22334
-  auth-str: dongtaiwang.com
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: 油管绵阿羊_United States_hysteria2_81
+  type: hysteria2
+  server: 45.150.165.84
+  port: 8881
+  password: d017e316-82cb-441c-8eea-7b5e9de64a20
+  obfs: salamander
+  obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20
   skip-cert-verify: true
+  up: 2 Mbps
+  down: 10 Mbps
 - name: 油管绵阿羊_Taiwan_hysteria_91
   type: hysteria
   server: www.dtku50.xyz
@@ -2018,7 +2023,7 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - 油管绵阿羊_China_ss_01
+  - 油管绵阿羊_United States_ss_01
   - 油管绵阿羊_China_ss_02
   - 油管绵阿羊_China_ss_03
   - 油管绵阿羊_China_ss_04
@@ -2029,17 +2034,18 @@ proxy-groups:
   - 油管绵阿羊_China_ss_09
   - 油管绵阿羊_United States_ss_010
   - 油管绵阿羊_China_ss_011
-  - 油管绵阿羊_China_vmess_11
-  - 油管绵阿羊_China_ss_12
-  - 油管绵阿羊_None_vmess_13
-  - 油管绵阿羊_China_ss_14
-  - 油管绵阿羊_United States_vmess_15
-  - 油管绵阿羊_None_vmess_16
-  - 油管绵阿羊_China_ss_17
+  - 油管绵阿羊_Taiwan_ss_11
+  - 油管绵阿羊_China_vmess_12
+  - 油管绵阿羊_China_ss_13
+  - 油管绵阿羊_None_vmess_14
+  - 油管绵阿羊_China_ss_15
+  - 油管绵阿羊_United States_vmess_16
+  - 油管绵阿羊_None_vmess_17
   - 油管绵阿羊_China_ss_18
   - 油管绵阿羊_China_ss_19
   - 油管绵阿羊_China_ss_110
   - 油管绵阿羊_China_ss_111
+  - 油管绵阿羊_China_ss_112
   - 油管绵阿羊_United States_ss_21
   - 油管绵阿羊_United States_ss_31
   - 油管绵阿羊_United States_ss_41
@@ -2182,7 +2188,7 @@ proxy-groups:
   - 油管绵阿羊_United States_vless_5137
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
-  - 油管绵阿羊_Taiwan_hysteria_81
+  - 油管绵阿羊_United States_hysteria2_81
   - 油管绵阿羊_Taiwan_hysteria_91
   - 油管绵阿羊_France_hy_0
   - 油管绵阿羊_United States_hy_1
@@ -2200,7 +2206,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_China_ss_01
+  - 油管绵阿羊_United States_ss_01
   - 油管绵阿羊_China_ss_02
   - 油管绵阿羊_China_ss_03
   - 油管绵阿羊_China_ss_04
@@ -2211,17 +2217,18 @@ proxy-groups:
   - 油管绵阿羊_China_ss_09
   - 油管绵阿羊_United States_ss_010
   - 油管绵阿羊_China_ss_011
-  - 油管绵阿羊_China_vmess_11
-  - 油管绵阿羊_China_ss_12
-  - 油管绵阿羊_None_vmess_13
-  - 油管绵阿羊_China_ss_14
-  - 油管绵阿羊_United States_vmess_15
-  - 油管绵阿羊_None_vmess_16
-  - 油管绵阿羊_China_ss_17
+  - 油管绵阿羊_Taiwan_ss_11
+  - 油管绵阿羊_China_vmess_12
+  - 油管绵阿羊_China_ss_13
+  - 油管绵阿羊_None_vmess_14
+  - 油管绵阿羊_China_ss_15
+  - 油管绵阿羊_United States_vmess_16
+  - 油管绵阿羊_None_vmess_17
   - 油管绵阿羊_China_ss_18
   - 油管绵阿羊_China_ss_19
   - 油管绵阿羊_China_ss_110
   - 油管绵阿羊_China_ss_111
+  - 油管绵阿羊_China_ss_112
   - 油管绵阿羊_United States_ss_21
   - 油管绵阿羊_United States_ss_31
   - 油管绵阿羊_United States_ss_41
@@ -2364,7 +2371,7 @@ proxy-groups:
   - 油管绵阿羊_United States_vless_5137
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
-  - 油管绵阿羊_Taiwan_hysteria_81
+  - 油管绵阿羊_United States_hysteria2_81
   - 油管绵阿羊_Taiwan_hysteria_91
   - 油管绵阿羊_France_hy_0
   - 油管绵阿羊_United States_hy_1
