@@ -41,13 +41,17 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: 油管绵阿羊_United States_vless_01
-  type: vless
-  server: 108.181.5.18
-  port: 22222
-  uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
-  tls: false
-  network: tcp
+- name: 油管绵阿羊_United States_hysteria2_01
+  type: hysteria2
+  server: 64.31.55.30
+  port: 20011
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 油管绵阿羊_United States_tuic_11
   type: tuic
   server: 109.104.152.144
@@ -61,28 +65,26 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_Taiwan_vmess_21
-  type: vmess
-  server: www.dtku40.xyz
-  port: 34500
-  cipher: auto
-  uuid: fe3800ef-a9e8-4943-aaf2-6d99dac75c32
-  alterId: 0
+- name: 油管绵阿羊_United States_vless_21
+  type: vless
+  server: 108.181.5.18
+  port: 22222
+  uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
   tls: false
-  skip-cert-verify: true
-  servername: ''
   network: tcp
-- name: 油管绵阿羊_United States_vmess_31
-  type: vmess
-  server: 109.104.152.144
-  port: 12300
-  cipher: auto
-  uuid: 4be33771-099d-4d65-9426-09bed47eb41f
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: tcp
+- name: 油管绵阿羊_United States_tuic_31
+  type: tuic
+  server: 109.104.152.101
+  port: 22288
+  udp: true
+  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: 油管绵阿羊_United States_vless_41
   type: vless
   server: 109.104.152.101
@@ -1932,10 +1934,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_United States_vless_01
+  - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_United States_tuic_11
-  - 油管绵阿羊_Taiwan_vmess_21
-  - 油管绵阿羊_United States_vmess_31
+  - 油管绵阿羊_United States_vless_21
+  - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_vless_41
   - 油管绵阿羊_None_vless_51
   - 油管绵阿羊_None_vless_52
@@ -2092,10 +2094,10 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - 油管绵阿羊_United States_vless_01
+  - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_United States_tuic_11
-  - 油管绵阿羊_Taiwan_vmess_21
-  - 油管绵阿羊_United States_vmess_31
+  - 油管绵阿羊_United States_vless_21
+  - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_vless_41
   - 油管绵阿羊_None_vless_51
   - 油管绵阿羊_None_vless_52
@@ -2252,10 +2254,10 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - 油管绵阿羊_United States_vless_01
+  - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_United States_tuic_11
-  - 油管绵阿羊_Taiwan_vmess_21
-  - 油管绵阿羊_United States_vmess_31
+  - 油管绵阿羊_United States_vless_21
+  - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_vless_41
   - 油管绵阿羊_None_vless_51
   - 油管绵阿羊_None_vless_52
