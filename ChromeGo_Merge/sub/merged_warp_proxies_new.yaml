@@ -68,20 +68,20 @@ proxies:
 - name: 油管绵阿羊_Taiwan_vmess_12
   type: vmess
   server: www.dtku40.xyz
-  port: 40011
+  port: 18840
   cipher: auto
-  uuid: c506bccb-06b8-4f1a-bc3e-41ed4929c003
+  uuid: afb1ad76-0f6f-4cb8-983a-95f5b4708321
   alterId: 0
   tls: false
   skip-cert-verify: true
   servername: ''
   network: ws
   ws-opts:
-    path: /soh5qvuQ/
+    path: /9tEYTPFN/
 - name: 油管绵阿羊_United States_vmess_21
   type: vmess
   server: 108.181.5.18
-  port: 33300
+  port: 40010
   cipher: auto
   uuid: 44bee251-795d-4d7a-8ecb-c4322aec05be
   alterId: 0
