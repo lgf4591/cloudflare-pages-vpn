@@ -62,7 +62,19 @@ proxies:
   network: ws
   ws-opts:
     path: /9tEYTPFN/
-- name: 油管绵阿羊_United States_vmess_21
+- name: 油管绵阿羊_United States_hysteria_21
+  type: hysteria
+  server: 109.104.152.101
+  port: 32200
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+- name: 油管绵阿羊_United States_vmess_22
   type: vmess
   server: 108.181.5.18
   port: 40010
@@ -1911,7 +1923,8 @@ proxy-groups:
   - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_United States_tuic_11
   - 油管绵阿羊_Taiwan_vmess_12
-  - 油管绵阿羊_United States_vmess_21
+  - 油管绵阿羊_United States_hysteria_21
+  - 油管绵阿羊_United States_vmess_22
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_vless_41
   - 油管绵阿羊_None_vless_51
@@ -2074,7 +2087,8 @@ proxy-groups:
   - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_United States_tuic_11
   - 油管绵阿羊_Taiwan_vmess_12
-  - 油管绵阿羊_United States_vmess_21
+  - 油管绵阿羊_United States_hysteria_21
+  - 油管绵阿羊_United States_vmess_22
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_vless_41
   - 油管绵阿羊_None_vless_51
