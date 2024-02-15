@@ -1770,11 +1770,15 @@ proxies:
   skip-cert-verify: true
 - name: 油管绵阿羊_France_hysteria2_71
   type: hysteria2
-  server: 51.158.54.46
-  port: 44550
+  server: 51.159.77.153
+  port: 33390
   password: dongtaiwang.com
+  alpn:
+  - h3
   sni: bing.com
   skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 油管绵阿羊_United States_hysteria2_81
   type: hysteria2
   server: 45.150.165.84
