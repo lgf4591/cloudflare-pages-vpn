@@ -60,19 +60,17 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_United States_tuic_21
-  type: tuic
+- name: 油管绵阿羊_United States_hysteria2_21
+  type: hysteria2
   server: 109.104.152.101
-  port: 31102
-  udp: true
-  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
+  port: 16610
   password: dongtaiwang.com
   alpn:
   - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 油管绵阿羊_United States_tuic_31
   type: tuic
   server: 109.104.152.101
@@ -1908,7 +1906,7 @@ proxy-groups:
   - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_United States_hysteria2_02
   - 油管绵阿羊_United States_tuic_11
-  - 油管绵阿羊_United States_tuic_21
+  - 油管绵阿羊_United States_hysteria2_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_None_vless_51
@@ -2071,7 +2069,7 @@ proxy-groups:
   - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_United States_hysteria2_02
   - 油管绵阿羊_United States_tuic_11
-  - 油管绵阿羊_United States_tuic_21
+  - 油管绵阿羊_United States_hysteria2_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_None_vless_51
