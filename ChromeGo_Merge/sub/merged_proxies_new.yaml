@@ -25,25 +25,43 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: 油管绵阿羊_United States_vless_01
-  type: vless
-  server: 64.31.55.30
-  port: 33220
-  udp: true
-  uuid: fb706a82-ec58-44d9-8f7a-39b8494e3a6d
-  tls: true
-  servername: www.lovelive-anime.jp
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+- name: 油管绵阿羊_United States_hysteria2_01
+  type: hysteria2
+  server: 208.115.243.45
+  port: 30010
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 油管绵阿羊_United States_hysteria2_02
+  type: hysteria2
+  server: 109.104.152.171
+  port: 20011
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 油管绵阿羊_United States_hysteria2_11
   type: hysteria2
-  server: 109.104.152.242
-  port: 1022
+  server: 109.104.152.171
+  port: 20011
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 油管绵阿羊_United States_hysteria2_12
+  type: hysteria2
+  server: 208.115.243.45
+  port: 30010
   password: dongtaiwang.com
   alpn:
   - h3
@@ -53,8 +71,8 @@ proxies:
   down: 55 Mbps
 - name: 油管绵阿羊_United States_hysteria2_21
   type: hysteria2
-  server: 109.104.152.242
-  port: 1022
+  server: 109.104.152.171
+  port: 20011
   password: dongtaiwang.com
   alpn:
   - h3
@@ -64,32 +82,30 @@ proxies:
   down: 55 Mbps
 - name: 油管绵阿羊_United States_vless_31
   type: vless
-  server: 64.31.55.30
-  port: 33220
+  server: 108.181.5.130
+  port: 19910
   udp: true
-  uuid: fb706a82-ec58-44d9-8f7a-39b8494e3a6d
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
   tls: true
-  servername: www.lovelive-anime.jp
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  network: tcp
   reality-opts:
-    public-key: fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
 - name: 油管绵阿羊_United States_vless_41
   type: vless
-  server: 64.31.55.30
-  port: 33220
+  server: 108.181.5.130
+  port: 19910
   udp: true
-  uuid: fb706a82-ec58-44d9-8f7a-39b8494e3a6d
+  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
   tls: true
-  servername: www.lovelive-anime.jp
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  servername: m.media-amazon.com
+  flow: xtls-rprx-vision
+  network: tcp
   reality-opts:
-    public-key: fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko
+    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
 - name: 油管绵阿羊_None_vless_51
@@ -1902,8 +1918,10 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - 油管绵阿羊_United States_vless_01
+  - 油管绵阿羊_United States_hysteria2_01
+  - 油管绵阿羊_United States_hysteria2_02
   - 油管绵阿羊_United States_hysteria2_11
+  - 油管绵阿羊_United States_hysteria2_12
   - 油管绵阿羊_United States_hysteria2_21
   - 油管绵阿羊_United States_vless_31
   - 油管绵阿羊_United States_vless_41
@@ -2064,8 +2082,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_United States_vless_01
+  - 油管绵阿羊_United States_hysteria2_01
+  - 油管绵阿羊_United States_hysteria2_02
   - 油管绵阿羊_United States_hysteria2_11
+  - 油管绵阿羊_United States_hysteria2_12
   - 油管绵阿羊_United States_hysteria2_21
   - 油管绵阿羊_United States_vless_31
   - 油管绵阿羊_United States_vless_41
