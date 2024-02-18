@@ -27,19 +27,8 @@ dns:
 proxies:
 - name: 油管绵阿羊_United States_hysteria2_01
   type: hysteria2
-  server: 208.115.243.45
-  port: 30010
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 油管绵阿羊_United States_hysteria2_02
-  type: hysteria2
-  server: 109.104.152.171
-  port: 20011
+  server: 64.31.55.42
+  port: 31100
   password: dongtaiwang.com
   alpn:
   - h3
@@ -49,19 +38,8 @@ proxies:
   down: 55 Mbps
 - name: 油管绵阿羊_United States_hysteria2_11
   type: hysteria2
-  server: 109.104.152.171
-  port: 20011
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 油管绵阿羊_United States_hysteria2_12
-  type: hysteria2
-  server: 208.115.243.45
-  port: 30010
+  server: 64.31.55.42
+  port: 31100
   password: dongtaiwang.com
   alpn:
   - h3
@@ -71,8 +49,8 @@ proxies:
   down: 55 Mbps
 - name: 油管绵阿羊_United States_hysteria2_21
   type: hysteria2
-  server: 109.104.152.171
-  port: 20011
+  server: 64.31.55.42
+  port: 31100
   password: dongtaiwang.com
   alpn:
   - h3
@@ -1919,9 +1897,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - 油管绵阿羊_United States_hysteria2_01
-  - 油管绵阿羊_United States_hysteria2_02
   - 油管绵阿羊_United States_hysteria2_11
-  - 油管绵阿羊_United States_hysteria2_12
   - 油管绵阿羊_United States_hysteria2_21
   - 油管绵阿羊_United States_vless_31
   - 油管绵阿羊_United States_vless_41
@@ -2083,9 +2059,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 油管绵阿羊_United States_hysteria2_01
-  - 油管绵阿羊_United States_hysteria2_02
   - 油管绵阿羊_United States_hysteria2_11
-  - 油管绵阿羊_United States_hysteria2_12
   - 油管绵阿羊_United States_hysteria2_21
   - 油管绵阿羊_United States_vless_31
   - 油管绵阿羊_United States_vless_41
