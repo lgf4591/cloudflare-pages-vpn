@@ -236,7 +236,7 @@ proxies:
     path: 9084653a-ee34-4293-979e-7c2b50dffb84-vm
     headers:
       host: configured-creek-relating-theater.trycloudflare.com
-- name: 油管绵阿羊_United States_vmess_014
+- name: 油管绵阿羊_None_vmess_014
   type: vmess
   server: yh2.dtku41.xyz
   port: 8080
@@ -251,7 +251,7 @@ proxies:
     path: ac750859-79e7-4507-ba93-e92584ac49e3-vm
     headers:
       host: per-essex-patterns-bowling.trycloudflare.com
-- name: 油管绵阿羊_None_vmess_015
+- name: 油管绵阿羊_United States_vmess_015
   type: vmess
   server: yh2.dtku41.xyz
   port: 8080
@@ -2664,7 +2664,7 @@ proxies:
     path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
-- name: 油管绵阿羊_United States_vmess_31
+- name: 油管绵阿羊_None_vmess_31
   type: vmess
   server: yh1.freeh1.xyz
   port: 8080
@@ -2679,7 +2679,7 @@ proxies:
     path: 9084653a-ee34-4293-979e-7c2b50dffb84-vm
     headers:
       host: configured-creek-relating-theater.trycloudflare.com
-- name: 油管绵阿羊_United States_vmess_32
+- name: 油管绵阿羊_None_vmess_32
   type: vmess
   server: yh1.freeh1.xyz
   port: 8080
@@ -2904,7 +2904,7 @@ proxies:
     path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
-- name: 油管绵阿羊_None_vmess_59
+- name: 油管绵阿羊_United States_vmess_59
   type: vmess
   server: yh2.freeh1.xyz
   port: 8080
@@ -2919,7 +2919,7 @@ proxies:
     path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
     headers:
       host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-- name: 油管绵阿羊_United States_vmess_510
+- name: 油管绵阿羊_None_vmess_510
   type: vmess
   server: yh2.freeh1.xyz
   port: 8080
@@ -2964,7 +2964,7 @@ proxies:
     path: 41eeccfd-18e6-40b3-933d-c7000120ec2c-vm
     headers:
       host: larger-marketing-amounts-skin.trycloudflare.com
-- name: 油管绵阿羊_United States_vmess_513
+- name: 油管绵阿羊_None_vmess_513
   type: vmess
   server: yh3.freeh1.xyz
   port: 8080
@@ -2979,7 +2979,7 @@ proxies:
     path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
     headers:
       host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-- name: 油管绵阿羊_United States_vmess_514
+- name: 油管绵阿羊_None_vmess_514
   type: vmess
   server: yh3.freeh1.xyz
   port: 8080
@@ -2994,7 +2994,7 @@ proxies:
     path: 3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm
     headers:
       host: nest-emily-healing-h.trycloudflare.com
-- name: 油管绵阿羊_United States_vmess_515
+- name: 油管绵阿羊_None_vmess_515
   type: vmess
   server: yh3.freeh1.xyz
   port: 8080
@@ -3046,16 +3046,19 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: 油管绵阿羊_United States_hysteria2_81
-  type: hysteria2
+- name: 油管绵阿羊_United States_vless_81
+  type: vless
   server: 45.145.72.212
-  port: 8881
-  password: d017e316-82cb-441c-8eea-7b5e9de64a20
-  obfs: salamander
-  obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20
-  skip-cert-verify: true
-  up: 2 Mbps
-  down: 10 Mbps
+  port: 11223
+  udp: true
+  uuid: 34d7aac1-fac7-4e17-b41e-5be028d286cd
+  tls: true
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: u24pYS0RqtYk8NBqtg4NIHUZIA0HmwuYw2RBIyt0T0c
+  client-fingerprint: chrome
 - name: 油管绵阿羊_Taiwan_hysteria_91
   type: hysteria
   server: www.dtku50.xyz
@@ -3218,8 +3221,8 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_011
   - 油管绵阿羊_None_vmess_012
   - 油管绵阿羊_None_vmess_013
-  - 油管绵阿羊_United States_vmess_014
-  - 油管绵阿羊_None_vmess_015
+  - 油管绵阿羊_None_vmess_014
+  - 油管绵阿羊_United States_vmess_015
   - 油管绵阿羊_None_vmess_016
   - 油管绵阿羊_United States_vless_11
   - 油管绵阿羊_None_vmess_12
@@ -3380,8 +3383,8 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_2152
   - 油管绵阿羊_None_vmess_2153
   - 油管绵阿羊_None_vmess_2154
-  - 油管绵阿羊_United States_vmess_31
-  - 油管绵阿羊_United States_vmess_32
+  - 油管绵阿羊_None_vmess_31
+  - 油管绵阿羊_None_vmess_32
   - 油管绵阿羊_United States_vmess_33
   - 油管绵阿羊_None_vmess_34
   - 油管绵阿羊_Canada_vmess_41
@@ -3396,17 +3399,17 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_56
   - 油管绵阿羊_None_vmess_57
   - 油管绵阿羊_United States_vmess_58
-  - 油管绵阿羊_None_vmess_59
-  - 油管绵阿羊_United States_vmess_510
+  - 油管绵阿羊_United States_vmess_59
+  - 油管绵阿羊_None_vmess_510
   - 油管绵阿羊_None_vmess_511
   - 油管绵阿羊_None_vmess_512
-  - 油管绵阿羊_United States_vmess_513
-  - 油管绵阿羊_United States_vmess_514
-  - 油管绵阿羊_United States_vmess_515
+  - 油管绵阿羊_None_vmess_513
+  - 油管绵阿羊_None_vmess_514
+  - 油管绵阿羊_None_vmess_515
   - 油管绵阿羊_None_vmess_516
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
-  - 油管绵阿羊_United States_hysteria2_81
+  - 油管绵阿羊_United States_vless_81
   - 油管绵阿羊_Taiwan_hysteria_91
   - 油管绵阿羊_France_hy_0
   - 油管绵阿羊_United States_hy_1
@@ -3434,8 +3437,8 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_011
   - 油管绵阿羊_None_vmess_012
   - 油管绵阿羊_None_vmess_013
-  - 油管绵阿羊_United States_vmess_014
-  - 油管绵阿羊_None_vmess_015
+  - 油管绵阿羊_None_vmess_014
+  - 油管绵阿羊_United States_vmess_015
   - 油管绵阿羊_None_vmess_016
   - 油管绵阿羊_United States_vless_11
   - 油管绵阿羊_None_vmess_12
@@ -3596,8 +3599,8 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_2152
   - 油管绵阿羊_None_vmess_2153
   - 油管绵阿羊_None_vmess_2154
-  - 油管绵阿羊_United States_vmess_31
-  - 油管绵阿羊_United States_vmess_32
+  - 油管绵阿羊_None_vmess_31
+  - 油管绵阿羊_None_vmess_32
   - 油管绵阿羊_United States_vmess_33
   - 油管绵阿羊_None_vmess_34
   - 油管绵阿羊_Canada_vmess_41
@@ -3612,17 +3615,17 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_56
   - 油管绵阿羊_None_vmess_57
   - 油管绵阿羊_United States_vmess_58
-  - 油管绵阿羊_None_vmess_59
-  - 油管绵阿羊_United States_vmess_510
+  - 油管绵阿羊_United States_vmess_59
+  - 油管绵阿羊_None_vmess_510
   - 油管绵阿羊_None_vmess_511
   - 油管绵阿羊_None_vmess_512
-  - 油管绵阿羊_United States_vmess_513
-  - 油管绵阿羊_United States_vmess_514
-  - 油管绵阿羊_United States_vmess_515
+  - 油管绵阿羊_None_vmess_513
+  - 油管绵阿羊_None_vmess_514
+  - 油管绵阿羊_None_vmess_515
   - 油管绵阿羊_None_vmess_516
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
-  - 油管绵阿羊_United States_hysteria2_81
+  - 油管绵阿羊_United States_vless_81
   - 油管绵阿羊_Taiwan_hysteria_91
   - 油管绵阿羊_France_hy_0
   - 油管绵阿羊_United States_hy_1
@@ -3650,8 +3653,8 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_011
   - 油管绵阿羊_None_vmess_012
   - 油管绵阿羊_None_vmess_013
-  - 油管绵阿羊_United States_vmess_014
-  - 油管绵阿羊_None_vmess_015
+  - 油管绵阿羊_None_vmess_014
+  - 油管绵阿羊_United States_vmess_015
   - 油管绵阿羊_None_vmess_016
   - 油管绵阿羊_United States_vless_11
   - 油管绵阿羊_None_vmess_12
@@ -3812,8 +3815,8 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_2152
   - 油管绵阿羊_None_vmess_2153
   - 油管绵阿羊_None_vmess_2154
-  - 油管绵阿羊_United States_vmess_31
-  - 油管绵阿羊_United States_vmess_32
+  - 油管绵阿羊_None_vmess_31
+  - 油管绵阿羊_None_vmess_32
   - 油管绵阿羊_United States_vmess_33
   - 油管绵阿羊_None_vmess_34
   - 油管绵阿羊_Canada_vmess_41
@@ -3828,17 +3831,17 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_56
   - 油管绵阿羊_None_vmess_57
   - 油管绵阿羊_United States_vmess_58
-  - 油管绵阿羊_None_vmess_59
-  - 油管绵阿羊_United States_vmess_510
+  - 油管绵阿羊_United States_vmess_59
+  - 油管绵阿羊_None_vmess_510
   - 油管绵阿羊_None_vmess_511
   - 油管绵阿羊_None_vmess_512
-  - 油管绵阿羊_United States_vmess_513
-  - 油管绵阿羊_United States_vmess_514
-  - 油管绵阿羊_United States_vmess_515
+  - 油管绵阿羊_None_vmess_513
+  - 油管绵阿羊_None_vmess_514
+  - 油管绵阿羊_None_vmess_515
   - 油管绵阿羊_None_vmess_516
   - 油管绵阿羊_Taiwan_hysteria_61
   - 油管绵阿羊_France_hysteria2_71
-  - 油管绵阿羊_United States_hysteria2_81
+  - 油管绵阿羊_United States_vless_81
   - 油管绵阿羊_Taiwan_hysteria_91
   - 油管绵阿羊_France_hy_0
   - 油管绵阿羊_United States_hy_1
