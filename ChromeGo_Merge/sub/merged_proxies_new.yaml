@@ -307,22 +307,22 @@ proxies:
   - h3
 - name: 油管绵阿羊_United States_hy_3
   type: hysteria
-  server: 167.160.91.115
-  port: 41189
-  ports: 41189
-  auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF
+  server: 109.104.152.194
+  port: 25304
+  ports: 47000-48000
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.amazon.cn
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
-- name: 油管绵阿羊_France_hy2_0
+- name: 油管绵阿羊_United States_hy2_0
   type: hysteria2
-  server: 62.210.103.0
-  port: 22483
+  server: 109.104.152.194
+  port: 20352
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -374,7 +374,7 @@ proxy-groups:
   - 油管绵阿羊_United States_hy_1
   - 油管绵阿羊_Taiwan_hy_2
   - 油管绵阿羊_United States_hy_3
-  - 油管绵阿羊_France_hy2_0
+  - 油管绵阿羊_United States_hy2_0
   - 油管绵阿羊_United States_hy2_1
   - 油管绵阿羊_France_hy2_2
   - 油管绵阿羊_France_hy2_3
@@ -401,7 +401,7 @@ proxy-groups:
   - 油管绵阿羊_United States_hy_1
   - 油管绵阿羊_Taiwan_hy_2
   - 油管绵阿羊_United States_hy_3
-  - 油管绵阿羊_France_hy2_0
+  - 油管绵阿羊_United States_hy2_0
   - 油管绵阿羊_United States_hy2_1
   - 油管绵阿羊_France_hy2_2
   - 油管绵阿羊_France_hy2_3
