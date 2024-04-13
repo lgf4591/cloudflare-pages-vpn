@@ -67,7 +67,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
     headers:
       host: concentrations-taxi-about-recognised.trycloudflare.com
-- name: 油管绵阿羊_United States_vmess_12
+- name: 油管绵阿羊_None_vmess_12
   type: vmess
   server: yh1.dtku41.xyz
   port: 8080
@@ -390,7 +390,7 @@ proxy-groups:
   proxies:
   - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_None_vmess_11
-  - 油管绵阿羊_United States_vmess_12
+  - 油管绵阿羊_None_vmess_12
   - 油管绵阿羊_United States_vmess_13
   - 油管绵阿羊_None_vmess_14
   - 油管绵阿羊_United States_vless_21
@@ -414,7 +414,7 @@ proxy-groups:
   proxies:
   - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_None_vmess_11
-  - 油管绵阿羊_United States_vmess_12
+  - 油管绵阿羊_None_vmess_12
   - 油管绵阿羊_United States_vmess_13
   - 油管绵阿羊_None_vmess_14
   - 油管绵阿羊_United States_vless_21
@@ -438,7 +438,7 @@ proxy-groups:
   proxies:
   - 油管绵阿羊_United States_hysteria2_01
   - 油管绵阿羊_None_vmess_11
-  - 油管绵阿羊_United States_vmess_12
+  - 油管绵阿羊_None_vmess_12
   - 油管绵阿羊_United States_vmess_13
   - 油管绵阿羊_None_vmess_14
   - 油管绵阿羊_United States_vless_21
