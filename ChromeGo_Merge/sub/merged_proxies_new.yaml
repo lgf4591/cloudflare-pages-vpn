@@ -25,17 +25,18 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: 油管绵阿羊_United States_hysteria2_01
-  type: hysteria2
+- name: 油管绵阿羊_United States_tuic_01
   server: 74.63.233.74
-  port: 33445
+  port: 33441
+  type: tuic
+  uuid: a258065f-9502-4fe6-b3ed-cf7440e25150
   password: dongtaiwang.com
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 5 Mbps
-  down: 20 Mbps
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: 油管绵阿羊_United States_vless_21
   type: vless
   server: 109.104.152.101
@@ -297,7 +298,7 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - 油管绵阿羊_United States_hysteria2_01
+  - 油管绵阿羊_United States_tuic_01
   - 油管绵阿羊_United States_vless_21
   - 油管绵阿羊_United States_vless_31
   - 油管绵阿羊_United States_vless_41
@@ -320,7 +321,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_United States_hysteria2_01
+  - 油管绵阿羊_United States_tuic_01
   - 油管绵阿羊_United States_vless_21
   - 油管绵阿羊_United States_vless_31
   - 油管绵阿羊_United States_vless_41
