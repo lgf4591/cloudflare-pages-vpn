@@ -78,7 +78,7 @@ proxies:
     path: /argox-vl?ed=2048
     headers:
       host: giving-hide-provisions-corrected.trycloudflare.com
-- name: 油管绵阿羊_None_vless_22
+- name: 油管绵阿羊_Netherlands_vless_22
   type: vless
   server: yh9.dtku41.xyz
   port: 443
@@ -102,7 +102,7 @@ proxies:
     path: /argox-vl?ed=2048
     headers:
       host: giving-hide-provisions-corrected.trycloudflare.com
-- name: 油管绵阿羊_None_vless_24
+- name: 油管绵阿羊_United States_vless_24
   type: vless
   server: yh1.dtku41.xyz
   port: 443
@@ -348,9 +348,9 @@ proxy-groups:
   - 油管绵阿羊_United States_tuic_01
   - 油管绵阿羊_United States_hysteria_11
   - 油管绵阿羊_None_vless_21
-  - 油管绵阿羊_None_vless_22
+  - 油管绵阿羊_Netherlands_vless_22
   - 油管绵阿羊_None_vless_23
-  - 油管绵阿羊_None_vless_24
+  - 油管绵阿羊_United States_vless_24
   - 油管绵阿羊_None_vmess_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_United States_vless_51
@@ -372,9 +372,9 @@ proxy-groups:
   - 油管绵阿羊_United States_tuic_01
   - 油管绵阿羊_United States_hysteria_11
   - 油管绵阿羊_None_vless_21
-  - 油管绵阿羊_None_vless_22
+  - 油管绵阿羊_Netherlands_vless_22
   - 油管绵阿羊_None_vless_23
-  - 油管绵阿羊_None_vless_24
+  - 油管绵阿羊_United States_vless_24
   - 油管绵阿羊_None_vmess_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_United States_vless_51
@@ -396,9 +396,9 @@ proxy-groups:
   - 油管绵阿羊_United States_tuic_01
   - 油管绵阿羊_United States_hysteria_11
   - 油管绵阿羊_None_vless_21
-  - 油管绵阿羊_None_vless_22
+  - 油管绵阿羊_Netherlands_vless_22
   - 油管绵阿羊_None_vless_23
-  - 油管绵阿羊_None_vless_24
+  - 油管绵阿羊_United States_vless_24
   - 油管绵阿羊_None_vmess_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_United States_vless_51
