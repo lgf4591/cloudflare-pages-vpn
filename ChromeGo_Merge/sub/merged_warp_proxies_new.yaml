@@ -43,7 +43,7 @@ proxies:
   dialer-proxy: WARP前置节点
 - name: 油管绵阿羊_None_vmess_01
   type: vmess
-  server: fbi.gov
+  server: 104.16.148.244
   port: 8080
   uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
   alterId: 0
@@ -193,7 +193,7 @@ proxies:
       Host: ip002.freegradely.xyz
 - name: 油管绵阿羊_None_vmess_23
   type: vmess
-  server: fbi.gov
+  server: 104.16.148.244
   port: 2086
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   alterId: 0
@@ -283,7 +283,7 @@ proxies:
       host: luther-soon-uploaded-anxiety.trycloudflare.com
 - name: 油管绵阿羊_None_vmess_41
   type: vmess
-  server: fbi.gov
+  server: 104.16.148.244
   port: 2086
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   alterId: 0
