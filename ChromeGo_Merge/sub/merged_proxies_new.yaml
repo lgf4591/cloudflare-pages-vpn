@@ -95,11 +95,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: remaining-criminal-douglas-idol.trycloudflare.com
+  servername: doctor-granny-openings-br.trycloudflare.com
   ws-opts:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
+      Host: doctor-granny-openings-br.trycloudflare.com
 - name: 油管绵阿羊_Canada_vmess_12
   type: vmess
   server: 23.227.38.3
@@ -110,11 +110,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: remaining-criminal-douglas-idol.trycloudflare.com
+  servername: doctor-granny-openings-br.trycloudflare.com
   ws-opts:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
+      Host: doctor-granny-openings-br.trycloudflare.com
 - name: 油管绵阿羊_None_vmess_13
   type: vmess
   server: 141.101.122.184
@@ -125,11 +125,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: remaining-criminal-douglas-idol.trycloudflare.com
+  servername: doctor-granny-openings-br.trycloudflare.com
   ws-opts:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
+      Host: doctor-granny-openings-br.trycloudflare.com
 - name: 油管绵阿羊_None_vmess_14
   type: vmess
   server: 104.19.38.112
@@ -140,11 +140,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: remaining-criminal-douglas-idol.trycloudflare.com
+  servername: doctor-granny-openings-br.trycloudflare.com
   ws-opts:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
+      Host: doctor-granny-openings-br.trycloudflare.com
 - name: 油管绵阿羊_None_vmess_21
   type: vmess
   server: 104.19.51.232
