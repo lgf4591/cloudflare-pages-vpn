@@ -56,9 +56,9 @@ proxies:
     path: e9e3cc13-db48-4cc1-8c24-7626439a5339-vm
     headers:
       Host: ip11.freegradely.xyz
-- name: 油管绵阿羊_United States_vmess_02
+- name: 油管绵阿羊_None_vmess_02
   type: vmess
-  server: 172.64.169.160
+  server: 104.26.0.56
   port: 2086
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
@@ -407,9 +407,9 @@ proxies:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
       Host: ip5-4.freegradely.xyz
-- name: 油管绵阿羊_United States_vmess_73
+- name: 油管绵阿羊_None_vmess_73
   type: vmess
-  server: 172.64.144.66
+  server: 104.26.0.50
   port: 2086
   uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   alterId: 0
@@ -583,7 +583,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 油管绵阿羊_None_vmess_01
-  - 油管绵阿羊_United States_vmess_02
+  - 油管绵阿羊_None_vmess_02
   - 油管绵阿羊_Canada_vmess_03
   - 油管绵阿羊_None_vmess_04
   - 油管绵阿羊_None_vmess_11
@@ -606,7 +606,7 @@ proxy-groups:
   - 油管绵阿羊_United States_tuic_61
   - 油管绵阿羊_None_vmess_71
   - 油管绵阿羊_Canada_vmess_72
-  - 油管绵阿羊_United States_vmess_73
+  - 油管绵阿羊_None_vmess_73
   - 油管绵阿羊_None_vmess_74
   - 油管绵阿羊_United States_vless_81
   - 油管绵阿羊_United States_tuic_91
@@ -622,7 +622,7 @@ proxy-groups:
   type: select
   proxies:
   - 油管绵阿羊_None_vmess_01
-  - 油管绵阿羊_United States_vmess_02
+  - 油管绵阿羊_None_vmess_02
   - 油管绵阿羊_Canada_vmess_03
   - 油管绵阿羊_None_vmess_04
   - 油管绵阿羊_None_vmess_11
@@ -645,7 +645,7 @@ proxy-groups:
   - 油管绵阿羊_United States_tuic_61
   - 油管绵阿羊_None_vmess_71
   - 油管绵阿羊_Canada_vmess_72
-  - 油管绵阿羊_United States_vmess_73
+  - 油管绵阿羊_None_vmess_73
   - 油管绵阿羊_None_vmess_74
   - 油管绵阿羊_United States_vless_81
   - 油管绵阿羊_United States_tuic_91
@@ -661,7 +661,7 @@ proxy-groups:
   type: load-balance
   proxies:
   - 油管绵阿羊_None_vmess_01
-  - 油管绵阿羊_United States_vmess_02
+  - 油管绵阿羊_None_vmess_02
   - 油管绵阿羊_Canada_vmess_03
   - 油管绵阿羊_None_vmess_04
   - 油管绵阿羊_None_vmess_11
@@ -684,7 +684,7 @@ proxy-groups:
   - 油管绵阿羊_United States_tuic_61
   - 油管绵阿羊_None_vmess_71
   - 油管绵阿羊_Canada_vmess_72
-  - 油管绵阿羊_United States_vmess_73
+  - 油管绵阿羊_None_vmess_73
   - 油管绵阿羊_None_vmess_74
   - 油管绵阿羊_United States_vless_81
   - 油管绵阿羊_United States_tuic_91
