@@ -2197,13 +2197,13 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 油管绵阿羊_United States_hy2_0
+- name: 油管绵阿羊_France_hy2_0
   type: hysteria2
-  server: 166.88.159.24
-  port: 40931
+  server: 51.159.2.179
+  port: 23499
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
 - name: 油管绵阿羊_France_hy2_1
   type: hysteria2
@@ -2213,21 +2213,21 @@ proxies:
   fast-open: true
   sni: bing.com
   skip-cert-verify: true
-- name: 油管绵阿羊_United States_hy2_2
+- name: 油管绵阿羊_France_hy2_2
   type: hysteria2
-  server: 166.88.159.24
-  port: 40931
+  server: 51.159.2.179
+  port: 23499
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
-- name: 油管绵阿羊_United States_hy2_3
+- name: 油管绵阿羊_France_hy2_3
   type: hysteria2
-  server: 166.88.159.24
-  port: 40931
+  server: 51.159.2.179
+  port: 23499
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
@@ -2381,10 +2381,10 @@ proxy-groups:
   - 油管绵阿羊_France_hy_1
   - 油管绵阿羊_France_hy_2
   - 油管绵阿羊_France_hy_3
-  - 油管绵阿羊_United States_hy2_0
+  - 油管绵阿羊_France_hy2_0
   - 油管绵阿羊_France_hy2_1
-  - 油管绵阿羊_United States_hy2_2
-  - 油管绵阿羊_United States_hy2_3
+  - 油管绵阿羊_France_hy2_2
+  - 油管绵阿羊_France_hy2_3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2537,10 +2537,10 @@ proxy-groups:
   - 油管绵阿羊_France_hy_1
   - 油管绵阿羊_France_hy_2
   - 油管绵阿羊_France_hy_3
-  - 油管绵阿羊_United States_hy2_0
+  - 油管绵阿羊_France_hy2_0
   - 油管绵阿羊_France_hy2_1
-  - 油管绵阿羊_United States_hy2_2
-  - 油管绵阿羊_United States_hy2_3
+  - 油管绵阿羊_France_hy2_2
+  - 油管绵阿羊_France_hy2_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
