@@ -1436,7 +1436,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_None_vmess_094
+- name: 油管绵阿羊_United States_vmess_094
   type: vmess
   server: icook.tw
   port: 2086
@@ -1496,7 +1496,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_None_vmess_098
+- name: 油管绵阿羊_United States_vmess_098
   type: vmess
   server: russia.com
   port: 2086
@@ -1526,7 +1526,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_None_vmess_0100
+- name: 油管绵阿羊_United States_vmess_0100
   type: vmess
   server: skk.moe
   port: 2086
@@ -2215,14 +2215,9 @@ proxies:
 - name: 油管绵阿羊_France_ss_61
   type: ss
   server: 51.159.2.179
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EJhF7SAs95JSRDFE54wyjr79GvKPEm7w0qLpMh6T0aM=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: QuLaE7p3W+ZSOvK/q5G5zRV0UEBEefflZENLW6MZPFI=
-    version: 3
+  port: 22335
+  cipher: 2022-blake3-aes-256-gcm
+  password: zZpEonUDV3FRJbttewYtp9sH8hQdIFqqYIyTrVOegzs=
 - name: 油管绵阿羊_None_vmess_71
   type: vmess
   server: 104.19.32.88
@@ -2283,18 +2278,17 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: 油管绵阿羊_Taiwan_tuic_81
+- name: 油管绵阿羊_Taiwan_ss_81
   server: www2.dtku44.xyz
-  port: 11224
-  type: tuic
-  uuid: 285524a5-18ae-4bf4-8e89-473dfdc3a212
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  type: ss
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 6qfEwR4QOrHq+k3csNdEZgMa+Y890g/eouGnVEtxb0c=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
+    version: 3
 - name: 油管绵阿羊_France_ss_91
   type: ss
   server: 51.159.2.179
@@ -2308,43 +2302,43 @@ proxies:
     version: 3
 - name: 油管绵阿羊_United States_hy_0
   type: hysteria
-  server: 166.1.18.52
-  port: 41363
-  ports: 41363
+  server: 208.87.243.123
+  port: 38268
+  ports: 38268
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: 油管绵阿羊_United States_hy_1
   type: hysteria
-  server: 104.192.224.139
-  port: 42113
-  ports: 42113
+  server: 208.87.243.123
+  port: 38268
+  ports: 38268
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: 油管绵阿羊_United States_hy_2
   type: hysteria
-  server: 104.192.224.139
-  port: 42113
-  ports: 42113
+  server: 208.87.243.123
+  port: 38268
+  ports: 38268
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -2372,24 +2366,24 @@ proxies:
   skip-cert-verify: true
 - name: 油管绵阿羊_United States_hy2_1
   type: hysteria2
-  server: 38.114.103.210
-  port: 30647
+  server: 208.87.243.123
+  port: 33599
   password: dongtaiwang.com
   fast-open: true
   sni: bing.com
   skip-cert-verify: true
-- name: 油管绵阿羊_France_hy2_2
+- name: 油管绵阿羊_United States_hy2_2
   type: hysteria2
-  server: 51.159.2.179
-  port: 23499
+  server: 208.87.243.123
+  port: 33599
   password: dongtaiwang.com
   fast-open: true
   sni: bing.com
   skip-cert-verify: true
-- name: 油管绵阿羊_France_hy2_3
+- name: 油管绵阿羊_United States_hy2_3
   type: hysteria2
-  server: 51.159.2.179
-  port: 23499
+  server: 208.87.243.123
+  port: 33599
   password: dongtaiwang.com
   fast-open: true
   sni: bing.com
@@ -2508,13 +2502,13 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_091
   - 油管绵阿羊_None_vmess_092
   - 油管绵阿羊_Canada_vmess_093
-  - 油管绵阿羊_None_vmess_094
+  - 油管绵阿羊_United States_vmess_094
   - 油管绵阿羊_United States_vmess_095
   - 油管绵阿羊_None_vmess_096
   - 油管绵阿羊_None_vmess_097
-  - 油管绵阿羊_None_vmess_098
+  - 油管绵阿羊_United States_vmess_098
   - 油管绵阿羊_None_vmess_099
-  - 油管绵阿羊_None_vmess_0100
+  - 油管绵阿羊_United States_vmess_0100
   - 油管绵阿羊_None_vmess_0101
   - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_None_vmess_12
@@ -2565,7 +2559,7 @@ proxy-groups:
   - 油管绵阿羊_Canada_vmess_72
   - 油管绵阿羊_None_vmess_73
   - 油管绵阿羊_None_vmess_74
-  - 油管绵阿羊_Taiwan_tuic_81
+  - 油管绵阿羊_Taiwan_ss_81
   - 油管绵阿羊_France_ss_91
   - 油管绵阿羊_United States_hy_0
   - 油管绵阿羊_United States_hy_1
@@ -2573,8 +2567,8 @@ proxy-groups:
   - 油管绵阿羊_United States_hy_3
   - 油管绵阿羊_United States_hy2_0
   - 油管绵阿羊_United States_hy2_1
-  - 油管绵阿羊_France_hy2_2
-  - 油管绵阿羊_France_hy2_3
+  - 油管绵阿羊_United States_hy2_2
+  - 油管绵阿羊_United States_hy2_3
 - name: 手动选择
   type: select
   proxies:
@@ -2671,13 +2665,13 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_091
   - 油管绵阿羊_None_vmess_092
   - 油管绵阿羊_Canada_vmess_093
-  - 油管绵阿羊_None_vmess_094
+  - 油管绵阿羊_United States_vmess_094
   - 油管绵阿羊_United States_vmess_095
   - 油管绵阿羊_None_vmess_096
   - 油管绵阿羊_None_vmess_097
-  - 油管绵阿羊_None_vmess_098
+  - 油管绵阿羊_United States_vmess_098
   - 油管绵阿羊_None_vmess_099
-  - 油管绵阿羊_None_vmess_0100
+  - 油管绵阿羊_United States_vmess_0100
   - 油管绵阿羊_None_vmess_0101
   - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_None_vmess_12
@@ -2728,7 +2722,7 @@ proxy-groups:
   - 油管绵阿羊_Canada_vmess_72
   - 油管绵阿羊_None_vmess_73
   - 油管绵阿羊_None_vmess_74
-  - 油管绵阿羊_Taiwan_tuic_81
+  - 油管绵阿羊_Taiwan_ss_81
   - 油管绵阿羊_France_ss_91
   - 油管绵阿羊_United States_hy_0
   - 油管绵阿羊_United States_hy_1
@@ -2736,8 +2730,8 @@ proxy-groups:
   - 油管绵阿羊_United States_hy_3
   - 油管绵阿羊_United States_hy2_0
   - 油管绵阿羊_United States_hy2_1
-  - 油管绵阿羊_France_hy2_2
-  - 油管绵阿羊_France_hy2_3
+  - 油管绵阿羊_United States_hy2_2
+  - 油管绵阿羊_United States_hy2_3
 - name: 负载均衡
   type: load-balance
   proxies:
@@ -2834,13 +2828,13 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_091
   - 油管绵阿羊_None_vmess_092
   - 油管绵阿羊_Canada_vmess_093
-  - 油管绵阿羊_None_vmess_094
+  - 油管绵阿羊_United States_vmess_094
   - 油管绵阿羊_United States_vmess_095
   - 油管绵阿羊_None_vmess_096
   - 油管绵阿羊_None_vmess_097
-  - 油管绵阿羊_None_vmess_098
+  - 油管绵阿羊_United States_vmess_098
   - 油管绵阿羊_None_vmess_099
-  - 油管绵阿羊_None_vmess_0100
+  - 油管绵阿羊_United States_vmess_0100
   - 油管绵阿羊_None_vmess_0101
   - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_None_vmess_12
@@ -2891,7 +2885,7 @@ proxy-groups:
   - 油管绵阿羊_Canada_vmess_72
   - 油管绵阿羊_None_vmess_73
   - 油管绵阿羊_None_vmess_74
-  - 油管绵阿羊_Taiwan_tuic_81
+  - 油管绵阿羊_Taiwan_ss_81
   - 油管绵阿羊_France_ss_91
   - 油管绵阿羊_United States_hy_0
   - 油管绵阿羊_United States_hy_1
@@ -2899,8 +2893,8 @@ proxy-groups:
   - 油管绵阿羊_United States_hy_3
   - 油管绵阿羊_United States_hy2_0
   - 油管绵阿羊_United States_hy2_1
-  - 油管绵阿羊_France_hy2_2
-  - 油管绵阿羊_France_hy2_3
+  - 油管绵阿羊_United States_hy2_2
+  - 油管绵阿羊_United States_hy2_3
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
