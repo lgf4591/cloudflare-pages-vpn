@@ -1420,7 +1420,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_None_vmess_094
+- name: 油管绵阿羊_United States_vmess_094
   type: vmess
   server: icook.tw
   port: 2086
@@ -1450,7 +1450,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_United States_vmess_096
+- name: 油管绵阿羊_None_vmess_096
   type: vmess
   server: japan.com
   port: 2086
@@ -1465,7 +1465,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_United States_vmess_097
+- name: 油管绵阿羊_None_vmess_097
   type: vmess
   server: malaysia.com
   port: 2086
@@ -1480,7 +1480,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_None_vmess_098
+- name: 油管绵阿羊_United States_vmess_098
   type: vmess
   server: russia.com
   port: 2086
@@ -1510,7 +1510,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_None_vmess_0100
+- name: 油管绵阿羊_United States_vmess_0100
   type: vmess
   server: skk.moe
   port: 2086
@@ -2196,12 +2196,66 @@ proxies:
     host: nijigen-works.jp
     password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
     version: 3
-- name: 油管绵阿羊_France_ss_61
-  type: ss
-  server: 51.159.2.179
-  port: 22335
-  cipher: 2022-blake3-aes-256-gcm
-  password: zZpEonUDV3FRJbttewYtp9sH8hQdIFqqYIyTrVOegzs=
+- name: 油管绵阿羊_None_vmess_61
+  type: vmess
+  server: 104.19.32.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: 油管绵阿羊_Canada_vmess_62
+  type: vmess
+  server: 23.227.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: 油管绵阿羊_None_vmess_63
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: 油管绵阿羊_None_vmess_64
+  type: vmess
+  server: 104.19.38.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
 - name: 油管绵阿羊_None_vmess_71
   type: vmess
   server: 104.19.32.88
@@ -2273,64 +2327,113 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
-- name: 油管绵阿羊_France_ss_91
-  type: ss
-  server: 51.159.2.179
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EJhF7SAs95JSRDFE54wyjr79GvKPEm7w0qLpMh6T0aM=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: QuLaE7p3W+ZSOvK/q5G5zRV0UEBEefflZENLW6MZPFI=
-    version: 3
+- name: 油管绵阿羊_None_vmess_91
+  type: vmess
+  server: 104.19.32.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: 油管绵阿羊_Canada_vmess_92
+  type: vmess
+  server: 23.227.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: 油管绵阿羊_None_vmess_93
+  type: vmess
+  server: 104.26.0.50
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
+- name: 油管绵阿羊_None_vmess_94
+  type: vmess
+  server: 104.19.38.88
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip5-10.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip5-10.freegradely.xyz
 - name: 油管绵阿羊_United States_hy_0
   type: hysteria
   server: 208.87.243.123
-  port: 38268
-  ports: 38268
+  port: 31476
+  ports: 31476
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: wechat.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: 油管绵阿羊_United States_hy_1
   type: hysteria
   server: 208.87.243.123
-  port: 38268
-  ports: 38268
+  port: 31476
+  ports: 31476
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: wechat.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: 油管绵阿羊_United States_hy_2
   type: hysteria
   server: 208.87.243.123
-  port: 38268
-  ports: 38268
+  port: 31476
+  ports: 31476
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: www.microsoft.com
+  sni: wechat.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: 油管绵阿羊_United States_hy_3
   type: hysteria
   server: 166.1.18.52
-  port: 41363
-  ports: 41363
+  port: 10295
+  ports: 20000-30000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -2343,35 +2446,49 @@ proxies:
 - name: 油管绵阿羊_United States_hy2_0
   type: hysteria2
   server: 38.114.103.210
-  port: 30647
+  port: 26288
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 油管绵阿羊_United States_hy2_1
   type: hysteria2
-  server: 208.87.243.123
-  port: 33599
+  server: 108.181.24.39
+  port: 60714
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 油管绵阿羊_United States_hy2_2
   type: hysteria2
-  server: 208.87.243.123
-  port: 33599
+  server: 108.181.24.39
+  port: 60714
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 油管绵阿羊_United States_hy2_3
   type: hysteria2
-  server: 208.87.243.123
-  port: 33599
+  server: 108.181.24.39
+  port: 60714
   password: dongtaiwang.com
   fast-open: true
-  sni: bing.com
+  sni: www.bing.com
   skip-cert-verify: true
+- name: 油管绵阿羊_France_reality_0
+  type: vless
+  server: 62.210.101.0
+  port: 23357
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: U5hsLybYWhJrWAqqsTa052k-VeKt8bDFPxBh3CQk51M
+    short-id: 0b4badde
 proxy-groups:
 - name: 节点选择
   type: select
@@ -2471,13 +2588,13 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_091
   - 油管绵阿羊_None_vmess_092
   - 油管绵阿羊_Canada_vmess_093
-  - 油管绵阿羊_None_vmess_094
+  - 油管绵阿羊_United States_vmess_094
   - 油管绵阿羊_United States_vmess_095
-  - 油管绵阿羊_United States_vmess_096
-  - 油管绵阿羊_United States_vmess_097
-  - 油管绵阿羊_None_vmess_098
+  - 油管绵阿羊_None_vmess_096
+  - 油管绵阿羊_None_vmess_097
+  - 油管绵阿羊_United States_vmess_098
   - 油管绵阿羊_None_vmess_099
-  - 油管绵阿羊_None_vmess_0100
+  - 油管绵阿羊_United States_vmess_0100
   - 油管绵阿羊_None_vmess_0101
   - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_None_vmess_12
@@ -2523,13 +2640,19 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_43
   - 油管绵阿羊_None_vmess_44
   - Unknown_ss_51
-  - 油管绵阿羊_France_ss_61
+  - 油管绵阿羊_None_vmess_61
+  - 油管绵阿羊_Canada_vmess_62
+  - 油管绵阿羊_None_vmess_63
+  - 油管绵阿羊_None_vmess_64
   - 油管绵阿羊_None_vmess_71
   - 油管绵阿羊_Canada_vmess_72
   - 油管绵阿羊_None_vmess_73
   - 油管绵阿羊_None_vmess_74
   - 油管绵阿羊_Taiwan_ss_81
-  - 油管绵阿羊_France_ss_91
+  - 油管绵阿羊_None_vmess_91
+  - 油管绵阿羊_Canada_vmess_92
+  - 油管绵阿羊_None_vmess_93
+  - 油管绵阿羊_None_vmess_94
   - 油管绵阿羊_United States_hy_0
   - 油管绵阿羊_United States_hy_1
   - 油管绵阿羊_United States_hy_2
@@ -2538,6 +2661,7 @@ proxy-groups:
   - 油管绵阿羊_United States_hy2_1
   - 油管绵阿羊_United States_hy2_2
   - 油管绵阿羊_United States_hy2_3
+  - 油管绵阿羊_France_reality_0
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2637,13 +2761,13 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_091
   - 油管绵阿羊_None_vmess_092
   - 油管绵阿羊_Canada_vmess_093
-  - 油管绵阿羊_None_vmess_094
+  - 油管绵阿羊_United States_vmess_094
   - 油管绵阿羊_United States_vmess_095
-  - 油管绵阿羊_United States_vmess_096
-  - 油管绵阿羊_United States_vmess_097
-  - 油管绵阿羊_None_vmess_098
+  - 油管绵阿羊_None_vmess_096
+  - 油管绵阿羊_None_vmess_097
+  - 油管绵阿羊_United States_vmess_098
   - 油管绵阿羊_None_vmess_099
-  - 油管绵阿羊_None_vmess_0100
+  - 油管绵阿羊_United States_vmess_0100
   - 油管绵阿羊_None_vmess_0101
   - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_None_vmess_12
@@ -2689,13 +2813,19 @@ proxy-groups:
   - 油管绵阿羊_None_vmess_43
   - 油管绵阿羊_None_vmess_44
   - Unknown_ss_51
-  - 油管绵阿羊_France_ss_61
+  - 油管绵阿羊_None_vmess_61
+  - 油管绵阿羊_Canada_vmess_62
+  - 油管绵阿羊_None_vmess_63
+  - 油管绵阿羊_None_vmess_64
   - 油管绵阿羊_None_vmess_71
   - 油管绵阿羊_Canada_vmess_72
   - 油管绵阿羊_None_vmess_73
   - 油管绵阿羊_None_vmess_74
   - 油管绵阿羊_Taiwan_ss_81
-  - 油管绵阿羊_France_ss_91
+  - 油管绵阿羊_None_vmess_91
+  - 油管绵阿羊_Canada_vmess_92
+  - 油管绵阿羊_None_vmess_93
+  - 油管绵阿羊_None_vmess_94
   - 油管绵阿羊_United States_hy_0
   - 油管绵阿羊_United States_hy_1
   - 油管绵阿羊_United States_hy_2
@@ -2704,6 +2834,7 @@ proxy-groups:
   - 油管绵阿羊_United States_hy2_1
   - 油管绵阿羊_United States_hy2_2
   - 油管绵阿羊_United States_hy2_3
+  - 油管绵阿羊_France_reality_0
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
