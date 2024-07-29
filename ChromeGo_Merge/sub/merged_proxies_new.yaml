@@ -1465,7 +1465,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_United States_vmess_097
+- name: 油管绵阿羊_None_vmess_097
   type: vmess
   server: malaysia.com
   port: 2086
@@ -1510,7 +1510,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip1.1789034.xyz
-- name: 油管绵阿羊_United States_vmess_0100
+- name: 油管绵阿羊_None_vmess_0100
   type: vmess
   server: skk.moe
   port: 2086
@@ -2475,20 +2475,6 @@ proxies:
   fast-open: true
   sni: bing.com
   skip-cert-verify: true
-- name: 油管绵阿羊_France_reality_0
-  type: vless
-  server: 62.210.101.0
-  port: 23357
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: U5hsLybYWhJrWAqqsTa052k-VeKt8bDFPxBh3CQk51M
-    short-id: 0b4badde
 proxy-groups:
 - name: 节点选择
   type: select
@@ -2591,10 +2577,10 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_094
   - 油管绵阿羊_United States_vmess_095
   - 油管绵阿羊_None_vmess_096
-  - 油管绵阿羊_United States_vmess_097
+  - 油管绵阿羊_None_vmess_097
   - 油管绵阿羊_United States_vmess_098
   - 油管绵阿羊_None_vmess_099
-  - 油管绵阿羊_United States_vmess_0100
+  - 油管绵阿羊_None_vmess_0100
   - 油管绵阿羊_None_vmess_0101
   - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_None_vmess_12
@@ -2661,7 +2647,6 @@ proxy-groups:
   - 油管绵阿羊_United States_hy2_1
   - 油管绵阿羊_United States_hy2_2
   - 油管绵阿羊_United States_hy2_3
-  - 油管绵阿羊_France_reality_0
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2764,10 +2749,10 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_094
   - 油管绵阿羊_United States_vmess_095
   - 油管绵阿羊_None_vmess_096
-  - 油管绵阿羊_United States_vmess_097
+  - 油管绵阿羊_None_vmess_097
   - 油管绵阿羊_United States_vmess_098
   - 油管绵阿羊_None_vmess_099
-  - 油管绵阿羊_United States_vmess_0100
+  - 油管绵阿羊_None_vmess_0100
   - 油管绵阿羊_None_vmess_0101
   - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_None_vmess_12
@@ -2834,7 +2819,6 @@ proxy-groups:
   - 油管绵阿羊_United States_hy2_1
   - 油管绵阿羊_United States_hy2_2
   - 油管绵阿羊_United States_hy2_3
-  - 油管绵阿羊_France_reality_0
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
