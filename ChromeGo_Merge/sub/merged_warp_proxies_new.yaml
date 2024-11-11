@@ -1436,7 +1436,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip23.6016725.xyz
-- name: 油管绵阿羊_United States_vmess_094
+- name: 油管绵阿羊_None_vmess_094
   type: vmess
   server: icook.tw
   port: 2095
@@ -1466,7 +1466,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip23.6016725.xyz
-- name: 油管绵阿羊_United States_vmess_096
+- name: 油管绵阿羊_None_vmess_096
   type: vmess
   server: japan.com
   port: 2095
@@ -3053,7 +3053,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip30.6929198.xyz
-- name: 油管绵阿羊_None_vmess_296
+- name: 油管绵阿羊_United States_vmess_296
   type: vmess
   server: japan.com
   port: 2082
@@ -3098,7 +3098,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip30.6929198.xyz
-- name: 油管绵阿羊_United States_vmess_299
+- name: 油管绵阿羊_None_vmess_299
   type: vmess
   server: singapore.com
   port: 2082
@@ -3617,9 +3617,9 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_091
   - 油管绵阿羊_None_vmess_092
   - 油管绵阿羊_Canada_vmess_093
-  - 油管绵阿羊_United States_vmess_094
+  - 油管绵阿羊_None_vmess_094
   - 油管绵阿羊_United States_vmess_095
-  - 油管绵阿羊_United States_vmess_096
+  - 油管绵阿羊_None_vmess_096
   - 油管绵阿羊_United States_vmess_097
   - 油管绵阿羊_None_vmess_098
   - 油管绵阿羊_United States_vmess_099
@@ -3724,10 +3724,10 @@ proxy-groups:
   - 油管绵阿羊_Canada_vmess_293
   - 油管绵阿羊_United States_vmess_294
   - 油管绵阿羊_None_vmess_295
-  - 油管绵阿羊_None_vmess_296
+  - 油管绵阿羊_United States_vmess_296
   - 油管绵阿羊_None_vmess_297
   - 油管绵阿羊_None_vmess_298
-  - 油管绵阿羊_United States_vmess_299
+  - 油管绵阿羊_None_vmess_299
   - 油管绵阿羊_None_vmess_2100
   - 油管绵阿羊_None_vmess_2101
   - 油管绵阿羊_None_vmess_31
@@ -3850,9 +3850,9 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_091
   - 油管绵阿羊_None_vmess_092
   - 油管绵阿羊_Canada_vmess_093
-  - 油管绵阿羊_United States_vmess_094
+  - 油管绵阿羊_None_vmess_094
   - 油管绵阿羊_United States_vmess_095
-  - 油管绵阿羊_United States_vmess_096
+  - 油管绵阿羊_None_vmess_096
   - 油管绵阿羊_United States_vmess_097
   - 油管绵阿羊_None_vmess_098
   - 油管绵阿羊_United States_vmess_099
@@ -3957,10 +3957,10 @@ proxy-groups:
   - 油管绵阿羊_Canada_vmess_293
   - 油管绵阿羊_United States_vmess_294
   - 油管绵阿羊_None_vmess_295
-  - 油管绵阿羊_None_vmess_296
+  - 油管绵阿羊_United States_vmess_296
   - 油管绵阿羊_None_vmess_297
   - 油管绵阿羊_None_vmess_298
-  - 油管绵阿羊_United States_vmess_299
+  - 油管绵阿羊_None_vmess_299
   - 油管绵阿羊_None_vmess_2100
   - 油管绵阿羊_None_vmess_2101
   - 油管绵阿羊_None_vmess_31
@@ -4083,9 +4083,9 @@ proxy-groups:
   - 油管绵阿羊_United States_vmess_091
   - 油管绵阿羊_None_vmess_092
   - 油管绵阿羊_Canada_vmess_093
-  - 油管绵阿羊_United States_vmess_094
+  - 油管绵阿羊_None_vmess_094
   - 油管绵阿羊_United States_vmess_095
-  - 油管绵阿羊_United States_vmess_096
+  - 油管绵阿羊_None_vmess_096
   - 油管绵阿羊_United States_vmess_097
   - 油管绵阿羊_None_vmess_098
   - 油管绵阿羊_United States_vmess_099
@@ -4190,10 +4190,10 @@ proxy-groups:
   - 油管绵阿羊_Canada_vmess_293
   - 油管绵阿羊_United States_vmess_294
   - 油管绵阿羊_None_vmess_295
-  - 油管绵阿羊_None_vmess_296
+  - 油管绵阿羊_United States_vmess_296
   - 油管绵阿羊_None_vmess_297
   - 油管绵阿羊_None_vmess_298
-  - 油管绵阿羊_United States_vmess_299
+  - 油管绵阿羊_None_vmess_299
   - 油管绵阿羊_None_vmess_2100
   - 油管绵阿羊_None_vmess_2101
   - 油管绵阿羊_None_vmess_31
