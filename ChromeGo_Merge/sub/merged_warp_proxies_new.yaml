@@ -129,7 +129,7 @@ proxies:
   down: 55 Mbps
 - name: 油管绵阿羊_France_hysteria_71
   type: hysteria
-  server: 62.210.127.217
+  server: 62.210.10.186
   port: 50011
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -139,9 +139,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 油管绵阿羊_France_hysteria_81
+- name: Unknown_hysteria_81
   type: hysteria
-  server: 62.210.127.217
+  server: 2001:bc8:32d7:158::2
   port: 50011
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -163,10 +163,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 油管绵阿羊_Netherlands_hy_0
+- name: 油管绵阿羊_Luxembourg_hy_0
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
@@ -177,10 +177,10 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 油管绵阿羊_Netherlands_hy_1
+- name: 油管绵阿羊_Luxembourg_hy_1
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
@@ -191,10 +191,10 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 油管绵阿羊_Netherlands_hy_2
+- name: 油管绵阿羊_Luxembourg_hy_2
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
@@ -205,10 +205,10 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 油管绵阿羊_Netherlands_hy_3
+- name: 油管绵阿羊_Luxembourg_hy_3
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
@@ -276,12 +276,12 @@ proxy-groups:
   - Unknown_hysteria2_51
   - Unknown_hysteria_61
   - 油管绵阿羊_France_hysteria_71
-  - 油管绵阿羊_France_hysteria_81
+  - Unknown_hysteria_81
   - Unknown_hysteria_91
-  - 油管绵阿羊_Netherlands_hy_0
-  - 油管绵阿羊_Netherlands_hy_1
-  - 油管绵阿羊_Netherlands_hy_2
-  - 油管绵阿羊_Netherlands_hy_3
+  - 油管绵阿羊_Luxembourg_hy_0
+  - 油管绵阿羊_Luxembourg_hy_1
+  - 油管绵阿羊_Luxembourg_hy_2
+  - 油管绵阿羊_Luxembourg_hy_3
   - Unknown_reality_0
   - Unknown_reality_3
 - name: 手动选择
@@ -295,12 +295,12 @@ proxy-groups:
   - Unknown_hysteria2_51
   - Unknown_hysteria_61
   - 油管绵阿羊_France_hysteria_71
-  - 油管绵阿羊_France_hysteria_81
+  - Unknown_hysteria_81
   - Unknown_hysteria_91
-  - 油管绵阿羊_Netherlands_hy_0
-  - 油管绵阿羊_Netherlands_hy_1
-  - 油管绵阿羊_Netherlands_hy_2
-  - 油管绵阿羊_Netherlands_hy_3
+  - 油管绵阿羊_Luxembourg_hy_0
+  - 油管绵阿羊_Luxembourg_hy_1
+  - 油管绵阿羊_Luxembourg_hy_2
+  - 油管绵阿羊_Luxembourg_hy_3
   - Unknown_reality_0
   - Unknown_reality_3
 - name: 负载均衡
@@ -314,12 +314,12 @@ proxy-groups:
   - Unknown_hysteria2_51
   - Unknown_hysteria_61
   - 油管绵阿羊_France_hysteria_71
-  - 油管绵阿羊_France_hysteria_81
+  - Unknown_hysteria_81
   - Unknown_hysteria_91
-  - 油管绵阿羊_Netherlands_hy_0
-  - 油管绵阿羊_Netherlands_hy_1
-  - 油管绵阿羊_Netherlands_hy_2
-  - 油管绵阿羊_Netherlands_hy_3
+  - 油管绵阿羊_Luxembourg_hy_0
+  - 油管绵阿羊_Luxembourg_hy_1
+  - 油管绵阿羊_Luxembourg_hy_2
+  - 油管绵阿羊_Luxembourg_hy_3
   - Unknown_reality_0
   - Unknown_reality_3
   url: http://www.gstatic.com/generate_204
