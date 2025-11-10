@@ -147,62 +147,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 油管绵阿羊_Luxembourg_hy_0
-  type: hysteria
-  server: 109.104.154.97
-  port: 48429
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 油管绵阿羊_Luxembourg_hy_1
-  type: hysteria
-  server: 109.104.154.97
-  port: 48429
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 油管绵阿羊_Luxembourg_hy_2
-  type: hysteria
-  server: 109.104.154.97
-  port: 48429
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 油管绵阿羊_Luxembourg_hy_3
-  type: hysteria
-  server: 109.104.154.97
-  port: 48429
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_reality_0
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -247,10 +191,6 @@ proxy-groups:
   - 油管绵阿羊_France_hysteria_71
   - Unknown_hysteria_81
   - Unknown_hysteria_91
-  - 油管绵阿羊_Luxembourg_hy_0
-  - 油管绵阿羊_Luxembourg_hy_1
-  - 油管绵阿羊_Luxembourg_hy_2
-  - 油管绵阿羊_Luxembourg_hy_3
   - Unknown_reality_0
   - Unknown_reality_3
 - name: 自动选择
@@ -269,10 +209,6 @@ proxy-groups:
   - 油管绵阿羊_France_hysteria_71
   - Unknown_hysteria_81
   - Unknown_hysteria_91
-  - 油管绵阿羊_Luxembourg_hy_0
-  - 油管绵阿羊_Luxembourg_hy_1
-  - 油管绵阿羊_Luxembourg_hy_2
-  - 油管绵阿羊_Luxembourg_hy_3
   - Unknown_reality_0
   - Unknown_reality_3
 rules:
