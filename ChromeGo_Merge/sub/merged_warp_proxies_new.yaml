@@ -41,11 +41,11 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: Unknown_hysteria2_01
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  port: 20088
-  password: dongtaiwang.com
+- name: Unknown_hysteria_01
+  type: hysteria
+  server: 2001:bc8:32d7:17b::2
+  port: 11000
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -53,11 +53,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria2_11
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  port: 20088
-  password: dongtaiwang.com
+- name: Unknown_hysteria_11
+  type: hysteria
+  server: 2001:bc8:32d7:17b::2
+  port: 11000
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -78,11 +78,11 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_hysteria2_31
-  type: hysteria2
-  server: 2001:bc8:32d7:302::17
-  port: 20088
-  password: dongtaiwang.com
+- name: Unknown_hysteria_31
+  type: hysteria
+  server: 2001:bc8:32d7:17b::2
+  port: 11000
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -103,11 +103,11 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_hysteria2_51
-  type: hysteria2
-  server: 2001:bc8:32d7:302::17
-  port: 20088
-  password: dongtaiwang.com
+- name: Unknown_hysteria_51
+  type: hysteria
+  server: 2001:bc8:32d7:17b::2
+  port: 11000
+  auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -212,12 +212,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_hysteria2_01
-  - Unknown_hysteria2_11
+  - Unknown_hysteria_01
+  - Unknown_hysteria_11
   - Unknown_tuic_21
-  - Unknown_hysteria2_31
+  - Unknown_hysteria_31
   - Unknown_tuic_41
-  - Unknown_hysteria2_51
+  - Unknown_hysteria_51
   - Unknown_hysteria_61
   - 油管绵阿羊_France_hysteria_71
   - Unknown_hysteria_81
@@ -227,12 +227,12 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - Unknown_hysteria2_01
-  - Unknown_hysteria2_11
+  - Unknown_hysteria_01
+  - Unknown_hysteria_11
   - Unknown_tuic_21
-  - Unknown_hysteria2_31
+  - Unknown_hysteria_31
   - Unknown_tuic_41
-  - Unknown_hysteria2_51
+  - Unknown_hysteria_51
   - Unknown_hysteria_61
   - 油管绵阿羊_France_hysteria_71
   - Unknown_hysteria_81
@@ -242,12 +242,12 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - Unknown_hysteria2_01
-  - Unknown_hysteria2_11
+  - Unknown_hysteria_01
+  - Unknown_hysteria_11
   - Unknown_tuic_21
-  - Unknown_hysteria2_31
+  - Unknown_hysteria_31
   - Unknown_tuic_41
-  - Unknown_hysteria2_51
+  - Unknown_hysteria_51
   - Unknown_hysteria_61
   - 油管绵阿羊_France_hysteria_71
   - Unknown_hysteria_81
