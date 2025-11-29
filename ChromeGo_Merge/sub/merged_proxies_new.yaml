@@ -25,18 +25,6 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_hysteria_01
-  type: hysteria
-  server: 2001:bc8:32d7:17b::2
-  port: 11000
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_11
   type: hysteria
   server: 2001:bc8:32d7:17b::2
@@ -181,7 +169,6 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_hysteria_31
@@ -199,7 +186,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_hysteria_31
