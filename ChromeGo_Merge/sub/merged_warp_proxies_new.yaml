@@ -41,6 +41,18 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
+- name: Unknown_hysteria_01
+  type: hysteria
+  server: 2001:bc8:32d7:17b::2
+  port: 11000
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_11
   type: hysteria
   server: 2001:bc8:32d7:17b::2
@@ -200,6 +212,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_hysteria_31
@@ -214,6 +227,7 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_hysteria_31
@@ -228,6 +242,7 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_hysteria_31
